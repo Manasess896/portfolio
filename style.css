@@ -129,12 +129,13 @@ body.dark .scont {
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 9vh;
+    margin-top: 10vh;
     width: 1px;
 }
 img {
-    width: 40vw;
-    height: auto;
+    width: 35vw;
+    object-fit: cover;
+    border-radius: 2px;
 }
 .txt {
     text-transform: capitalize;
@@ -468,6 +469,7 @@ h4 {
     border: 1px solid white;
     background-color: transparent;
     color: white;
+    margin-top: 2vh;
 }
 .form textarea {
     width: 80%;
@@ -476,6 +478,7 @@ h4 {
     border: 1px solid white;
     background-color: transparent;
     color: white;
+    margin-top: 2vh;
 }
 .form ::placeholder {
     color: white;
@@ -494,7 +497,16 @@ h4 {
     border-radius: 10px;
     cursor: pointer;
     margin-bottom: 30px;
+    margin-top: 2vh;
 }
+.form label{
+font-family: 'Courier New', Courier, monospace;
+font-size: 1rem;
+text-transform: capitalize;
+display: block;
+font-weight: bold;
+}
+
 .contact {
     display: flex;
     flex-wrap: wrap;

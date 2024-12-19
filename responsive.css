@@ -22,6 +22,9 @@
   .fa-sun,.fa-moon:hover{
     transform: scale(1.2);
   }
+  .img-container img{
+    width: 20vw;
+  }
   .img-container{
     float: left;
     margin-top: 11vw;
