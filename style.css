@@ -428,6 +428,9 @@ h4 {
     background-color: black;
     color: white;
 }
+.back p{
+    text-transform: capitalize;
+}
 .title {
     text-transform: capitalize;
 }
@@ -522,19 +525,19 @@ font-weight: bold;
 .contact a:hover {
     transform: scale(1.1);
 }
-.fa-envelope:hover {
+body.dark .fa-envelope:hover,body.light .fa-envelope:hover {
     color: grey;
 }
-.fa-whatsapp:hover {
+body.dark .fa-whatsapp:hover,body.light .fa-whatsapp:hover {
     color: green;
 }
-.fa-phone:hover {
+body.dark .fa-phone:hover,body.light .fa-phone:hover {
     color: green;
 }
-.fa-linkedin:hover {
+body.dark .fa-linkedin:hover,body.light .fa-linkedin:hover {
     color: blue;
 }
-.fa-instagram:hover {
+body.dark .fa-instagram:hover ,body.light .fa-instagram:hover{
     color: orange;
 }
 .contheader {
@@ -598,6 +601,20 @@ font-weight: bold;
 }
 .scont h5{
     color: black;
+}
+h1{
+    display: inline-flex;
+    color: white;
+    float: left;
+    margin: 2vh;
+    font-family:  monospace;
+}
+.head1{
+    visibility: hidden;
+}
+h1 span{
+color: green;
+text-transform: uppercase;
 }
 .nav{
     background-color: black;

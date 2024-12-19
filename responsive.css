@@ -10,6 +10,16 @@
   .closenavbar,.opennavbar{
     display: none;
   }
+  .head1{
+    visibility: visible;
+  }
+  h1{
+    visibility: visible;
+    display: inline-flex;
+    position: fixed;
+    left: 0;
+    font-size: 2rem;
+  }
 .nav{
   display: none;
 }
