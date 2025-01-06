@@ -1,5 +1,5 @@
-@media screen and (min-width:700px){
-.navbar {
+@media screen and (min-width:540px) {
+  .navbar{
     display: flex;
     width: 100%;
     top: 0;
@@ -7,37 +7,28 @@
     align-items: right;
     justify-content: right;
   }
-
-  .closenavbar,
-  .opennavbar {
+  .closenavbar,.opennavbar{
     display: none;
   }
-
-  .head1 {
+  .head1{
     visibility: visible;
   }
-
-  h1 {
+  h1{
     visibility: visible;
     display: inline-flex;
     position: fixed;
     left: 0;
     font-size: 2rem;
   }
-
-  .nav {
-    display: none;
-  }
-
-  .navbtn:hover {
+.nav{
+  display: none;
+}
+  .navbtn:hover{
     background-color: yellow;
     border-radius: 1vw;
     color: black;
-
+    
   }
-}
-@media screen and (min-width:540px) {
-  
   .fa-sun,.fa-moon:hover{
     transform: scale(1.2);
   }
