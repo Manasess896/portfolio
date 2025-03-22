@@ -3,247 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manases's Portfolio</title>
     <meta name="description" content="Manases' portfolio showcasing web development, backend development, and SEO services.">
     <meta name="keywords" content="Manases, portfolio, web development, backend development, SEO,web developer portfolio, frontend developer,manases web developer,developer portfolio, web developer portfolio,Kenya">
     <meta name="google-site-verification" content="mqqbspzq3CoC63LpMrmRUv14laeKBMRSJOMm0wX1FN0" />
     <meta name="author" content="Manases">
-    <link rel="icon" type="image/x-icon" href="downloadhvhsg14.png">
+    <link rel="icon" type="image/x-icon" href="assets\images\icon\downloadhvhsg14.png">
     <link rel="canonical" href="https://manases.infohub18.tech">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <title>manases` portfolio</title>
+    <link rel="stylesheet" href="assets\style\main.css">
+    <link rel="stylesheet" href="assets\style\style.css">
+    <link rel="stylesheet" href="assets\style\navbar.css">
+    <link rel="stylesheet" href="assets\style\project.css">
+    <link rel="stylesheet" href="assets\style\largescreen.css">
+    <link rel="stylesheet" href="assets\style\maintitle.css">
+    <link rel="stylesheet" href="assets\style\back-to-top.css">
+    <link rel="stylesheet" href="assets\style\footer.css">
     <script src="https://kit.fontawesome.com/9d3f00a5c9.js" crossorigin="anonymous"></script>
     <meta name="msvalidate.01" content="1DF3E74E24891C85F4CD02DF1E48B3D9" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\style\largescreen.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
 </head>
-<body id="home" class="light">
-    <nav>
-        <div class="nav">
-            <h1><span>m</span>anases</h1>
-        <button  onclick="theme()" class="fa fa-sun theme" id="theme"></button>
-        <button id="openbtn" class="opennavbar" onclick="opennavbar()">&#9776;</button>
-        </div>
-        <div id="navbar" class="navbar">
-            <button onclick="closenavbar()" class="closenavbar">&times;</button>
-             <h1 class="head1"><span>m</span>anases</h1>
-        <button class="fa fa-sun theme-toggle" id="theme-toggle"></button>
-            <button class="navbtn" id="navbtn-home">home</button>
+<body>
+    <nav id="home">
+        <div class="navbar">
+            <h1>manases</h1>
+            <span class="open-nav-btn   fa-solid fa-bars" onclick="opennavbar()"></span>
+            <div class="nav-bar"  id="nav-bar">
+                <span class="close-nav-btn  fa fa-times" onclick="closenavbar()"></span>
+                <button class="navbtn" id="navbtn-home">home</button>
             <button class="navbtn" id="navbtn-about">about me</button>
             <button class="navbtn" id="navbtn-projects">projects</button>
             <button class="navbtn" id="navbtn-contact">contact me</button>
         </div>
+    </div>
+        
     </nav>
-<section>
+    <section class="img-txt-social-container">
     <div class="img-container" id="img-container">
-        <img src="IMG-20241218-WA0011[1].jpg" alt="">
+        <img src="assets\images\mainimages\IMG-20241218-WA0011[1].jpg" alt="an image of manases">
     </div>
-    <div class="txt">
-    <div id="intro-text">
-       
-    </div>
-  <div class="socials">
-    <a href="https://github.com/Manasess896/" class="fa fa-github"></a>
-    <a href="https://instagram.com/manases___" class="fa fa-instagram"></a>
-    <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin"></a>
-  </div>
-    </div>
-    <br>
-    <div class="about" id="about">
-        <div class=" main-title">
-            <button id="about-me-btn" onclick="openaboutme()">about me</button>
-            <button id="edu-btn" onclick="openeducation()">technologies</button>
-            <button id="skill-btn" onclick="openskills()">services</button>
+    <div class="txt-container">
+        <div id="intro-text" class="intro-text">
+           
         </div>
-        <div id="bar" class="status-bar"></div>
-        <div class="main-data">
-            <div class="aboutme" id="about-me"><p>I'm a self-taught web developer  with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the frontend development.</p></div>
-            <div class="aboutme" id="education">            <div class="technologies-icons" style="border: none;">
-                <span class="fa fa-html5"><i>HTML</i></span>
-                <span class="fa fa-css3"><i>CSS</i></span>
-                <span class="fa-brands fa-js"><i>JavaScript</i></span>
-                <span class="fa-brands fa-bootstrap"><i>Bootstrap</i></span>
-                <span class="fa-brands fa-react"><i>react</i></span>
-                <span class="fab fa-node-js"><i>node.js</i></span>
-                <span class="fa-brands fa-python"><i>python</i></span>
-            </div></div>
-            <div class="aboutme" id="skills">
-                <div class="services">
-                    <div class="webdevelopment">
-                       <div class="scont">
-                        <img src="9414296.png" alt=""> <h5>web development</h5> 
-                    </div>
-                    <div class="webdevcont">
-    <p>Web Application Development
-        Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design authoring, including standardised code and proprietary software user experience design and search engine</p>
-                    </div>
-                </div>
-                <div class="backend">
-                    <div class="scont">
-                        <img src="gvjkcxcvbndfdgjhjk.jpeg" alt=""> <h5>backend development</h5> 
-                    </div>
-                    <div class="backendcont">
-                        <p>Backend Development
-                            Backend development refers to the server-side of an application and everything that communicates between the database and the browser. Backend developers are responsible for the server-side application logic and integration of the work front-end developers do.</p>
-                </div>
-            </div>
-            <div class="seo">
-                <div class="scont">
-                    <img src="download8000.png" alt="" srcset="">
-                    <h5>search engine optimization</h5>
-                </div>
-                <div class="seocont">
-                    <p>search engine optimization</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="about2">
-    <div class="largescreenaboutme">
-        <div class="laboutme">
-            <h3>about me </h3>
-            <p>I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.</p>
-        </div>
-        <div class="technologies tech">
-            <h3>technologies</h3>
-            <div class="technologies-icons" style="border: none;">
-                <span class="fa fa-html5"><i>HTML</i></span>
-                <span class="fa fa-css3"><i>CSS</i></span>
-                <span class="fa-brands fa-js"><i>JavaScript</i></span>
-                <span class="fa-brands fa-bootstrap"><i>Bootstrap</i></span>
-                <span class="fa-brands fa-react"><i>react</i></span>
-                <span class="fab fa-node-js"><i>node.js</i></span>
-                <span class="fa-brands fa-python"><i>python</i></span>
-            </div>
-        </div>
-        <div class=" t">
-            <h4>services </h4>
-            <div class="services">
-                <div class="webdevelopment">
-                   <div class="scont">
-                    <img src="9414296.png" alt=""> <h5>web development</h5> 
-                </div>
-                <div class="webdevcont">
-<p>Web Application Development
-    Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design authoring, including standardised code and proprietary software user experience design and search engine</p>
-                </div>
-            </div>
-            <div class="backend">
-                <div class="scont">
-                    <img src="gvjkcxcvbndfdgjhjk.jpeg" alt=""> <h5>backend development</h5> 
-                </div>
-                <div class="backendcont">
-                    <p>Backend Development
-                        Backend development refers to the server-side of an application and everything that communicates between the database and the browser. Backend developers are responsible for the server-side application logic and integration of the work front-end developers do.</p>
-            </div>
-        </div>
-        <div class="seo">
-            <div class="scont">
-                <img src="download8000.png" alt="" srcset="">
-                <h5>search engine optimization</h5>
-            </div>
-            <div class="seocont">
-                <p>search engine optimization</p>
-            </div>
-        </div>
-    </div>
-        </div>
-    </div>
-    </div>
-    <h4 id="projects">projects</h4>
-    <div class="projects">
-        <p class="inst">click on the card to view details. <button type="link" class="gitbtn"><a href="https://github.com/manasess896">view more on github </a></button></p>
-        <div class="project">
-            <div class="project1">
-                <div class="title" onclick="toggleAccordion(this)">diskaunt 18</div>
-                <div class="main-con" onclick="flip(this)">
-                    <div class="front">
-                        <img src="Screenshot (8).png" alt="">
-                        <a href="https://weather.infohub18.tech" class="imglink">visit</a>
-                    </div>
-                    <div class="info back">
-                        <p>Weather App, your reliable source for accurate weather forecasts. Our mission is to provide you with the most up-to-date weather information to help you plan your day and stay safe.
-</p>
-                    </div>
-                </div>
-            </div>
-            <div class="project2">
-                <div class="title" onclick="toggleAccordion(this)">requestamovie</div>
-                <div class="main-con" onclick="flip(this)">
-                    <div class="front">
-                        <a href="https://requestamovie.diskaunt18.me" class="imglink">visit</a>
-                        <img src="Screenshot (2).png" alt="">
-                    </div>
-                    <div class="project2info back">
-                        <p>This is a website that showcases movie and TV show details, including show length, cast, and more.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="project3">
-                <div class="title" onclick="toggleAccordion(this)">school website</div>
-                <div class="main-con" onclick="flip(this)">
-                    <div class="front">
-                        <img src="Screenshot (7).png" alt="">
-                        <a href="https://manasess896.github.io/school/" class="imglink">visit</a>
-                    </div>
-                    <div class="project3info back">
-                        <p>this is a school website template ,it is built using html,css,javascript and node,js,it fetches contact forms and newsletter applications ,The data is sent to the database that is firebase ,and is can be viewed on an admin panel</p>
-                    </div>
-                </div>
-            </div>
-            <div class="project4">
-                <div class="title" onclick="toggleAccordion(this)">X-Bot</div>
-                <div class="main-con" onclick="flip(this)">
-                    <div class="front">
-                        <img src="Screenshot (6).png" alt="">
-                        <a href="https://github.com/Manasess896/X-bot" class="imglink">visit</a>
-                    </div>
-                    <div class="project4info back">
-                        <p>This is an X (previously Twitter) bot that automates posting things from APIs to your Twitter account. It is made with Python and the Twitter API.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="project5">
-                <div class="title" onclick="toggleAccordion(this)">infohub18</div>
-                <div class="main-con" onclick="flip(this)">
-                    <div class="front">
-                        <img src="Screenshot (4).png" alt="">
-                        <a href="https://infohub18.tech" class="imglink">visit</a>
-                    </div>
-                    <div class="back">
-                        <p>Project description</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> <br>
+        <div class="socials-container">
+      <div class="socials">
+        <a href="https://github.com/Manasess896/" class="fa fa-github"></a>
+        <a href="https://instagram.com/manases___" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin"></a>
+      </div>
     </div>
 </section>
-<footer id="contact">
-    <div class="contacts">
-     <div class="form">
-        <h4>contact me </h4>
-                <form action="https://formspree.io/f/moqgpbjg" method="POST">
-                    <label for="name">name:</label>
-            <input class="inpu" type="text" placeholder="name" required> 
-            <label for="email">email:</label>
-            <input type="email" placeholder="email" required>
-            <label for="message">message:</label>
-            <textarea name="message" id="message" cols="30" rows="6" placeholder="message" required></textarea> <br>
-            <button type="submit">send</button>
-                </form>
-     </div>
     
-<div class="contact">
-    <a href="tel:+254114471302" class="social fa fa-phone"></a>
-<a href="mailto:manasesskamau1053@gmail.com" class="cont fa  fa-envelope"></a>
-<a href="https://instagram.com/manases___" class="social fa fa-instagram"></a>
-<a href="https://wa.me/+254114471302" class="social fa fa-whatsapp"></a>
-<a href="https://github.com/manasess896" class="social fa fa-github"></a>
-<a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social fa fa-linkedin"></a>
-</div>
-    </div>
- </footer>
-<script src="index.js"></script>
+        <section class="main-title-container" id="aboutme">
+            <div class=" main-title">
+                <button id="about-me-btn" onclick="openaboutme()">about me</button>
+                <button id="edu-btn" onclick="openeducation()">technologies</button>
+                <button id="skill-btn" onclick="openskills()">services</button>
+            </div>
+            <div id="bar" class="status-bar"></div>
+            <div class="main-data">
+                <div class="aboutme" id="about-me"><p>I'm a self-taught web developer  with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the frontend development.</p></div>
+                <div class="aboutme" id="education">            <div class="technologies-icons" style="border: none;">
+                    <span class="fa fa-html5"><i>HTML</i></span>
+                    <span class="fa fa-css3"><i>CSS</i></span>
+                    <span class="fa-brands fa-js"><i>JavaScript</i></span>
+                    <span class="fa-brands fa-bootstrap"><i>Bootstrap</i></span>
+                    <span class="fa-brands fa-react"><i>react</i></span>
+                    <span class="fab fa-node-js"><i>node.js</i></span>
+                    <span class="fa-brands fa-python"><i>python</i></span>
+                </div></div>
+                <div class="aboutme" id="skills">
+                    <div class="services">
+                        <div class="webdevelopment">
+                           <div class="scont">
+                            <img src="assets\images\service images\9414296.png" alt=""> <h5>web development</h5> 
+                        </div>
+                        <div class="webdevcont">
+        <p>Web Application Development
+            Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design authoring, including standardised code and proprietary software user experience design and search engine</p>
+                        </div>
+                    </div>
+                    <div class="backend">
+                        <div class="scont">
+                            <img src="assets\images\service images\gvjkcxcvbndfdgjhjk.jpeg" alt=""> <h5>backend development</h5> 
+                        </div>
+                        <div class="backendcont">
+                            <p>Backend Development
+                                Backend development refers to the server-side of an application and everything that communicates between the database and the browser. Backend developers are responsible for the server-side application logic and integration of the work front-end developers do.</p>
+                    </div>
+                </div>
+                <div class="seo">
+                    <div class="scont">
+                        <img src="assets\images\service images\gvjkcxcvbndfdgjhjk.jpeg" alt="" srcset="">
+                        <h5>search engine optimization</h5>
+                    </div>
+                    <div class="seocont">
+                        <p>search engine optimization</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="my-projects">
+            <h4 id="projects">projects</h4>
+            <div class="projects">
+                <p class="inst">click on the card to view details. <button type="link" class="gitbtn"><a href="https://github.com/manasess896" class="gitlink">view more on github </a></button></p>
+                <div class="project">
+                    <div class="project1">
+                        <div class="title" onclick="toggleAccordion(this)">weather website</div>
+                        <div class="main-con" onclick="flip(this)">
+                            <div class="front">
+                                <img src="assets\images\project images\Screenshot (8).png" alt="this a screenshot of the weather website">
+                                <a href="https://weather.infohub18.tech" class="imglink">visit</a>
+                            </div>
+                            <div class="info back">
+                                <p>Weather App, your reliable source for accurate weather forecasts. Our mission is to provide you with the most up-to-date weather information to help you plan your day and stay safe.
+        </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project2">
+                        <div class="title" onclick="toggleAccordion(this)">requestamovie</div>
+                        <div class="main-con" onclick="flip(this)">
+                            <div class="front">
+                                <a href="https://requestamovie.infohub18.tech" class="imglink">visit</a>
+                                <img src="assets\images\project images\Screenshot (2).png" alt="this is a screenshot of the request a movie website">
+                            </div>
+                            <div class="project2info back">
+                                <p>This is a website that showcases movie and TV show details, including show length, cast, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project3">
+                        <div class="title" onclick="toggleAccordion(this)">school website</div>
+                        <div class="main-con" onclick="flip(this)">
+                            <div class="front">
+                                <img src="assets\images\project images\Screenshot (7).png" alt="a screenshot of the school website">
+                                <a href="https://manasess896.github.io/school/" class="imglink">visit</a>
+                            </div>
+                            <div class="project3info back">
+                                <p>this is a school website template ,it is built using html,css,javascript and node,js,it fetches contact forms and newsletter applications ,The data is sent to the database that is firebase ,and is can be viewed on an admin panel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project4">
+                        <div class="title" onclick="toggleAccordion(this)">X-Bot</div>
+                        <div class="main-con" onclick="flip(this)">
+                            <div class="front">
+                                <img src="assets\images\project images\Screenshot (6).png" alt="a screenshot of the X-bot">
+                                <a href="https://github.com/Manasess896/X-bot" class="imglink">visit</a>
+                            </div>
+                            <div class="project4info back">
+                                <p>This is an X (previously Twitter) bot that automates posting things from APIs to your Twitter account. It is made with Python and the Twitter API.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project5" style="display: none;">
+                        <div class="title" onclick="toggleAccordion(this)">infohub18</div>
+                        <div class="main-con" onclick="flip(this)">
+                            <div class="front">
+                                <img src="Screenshot (4).png" alt="">
+                                <a href="https://infohub18.tech" class="imglink">visit</a>
+                            </div>
+                            <div class="back">
+                                <p>Project description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<br> 
+        <footer id="contact">
+            <div class="contacts">
+             <div class="form">
+                <h4>contact me </h4>
+                        <form action="https://formspree.io/f/moqgpbjg" method="POST">
+                            <label for="name">name:</label>
+                    <input class="inpu" type="text" placeholder="name" required> 
+                    <label for="email">email:</label>
+                    <input type="email" placeholder="email" required>
+                    <label for="message">message:</label>
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="message" required></textarea> <br>
+                    <button type="submit">send</button>
+                        </form>
+             </div>
+            
+        <div class="contact">
+            <a href="tel:+254114471302" class="social fa fa-phone"></a>
+        <a href="mailto:manasesskamau1053@gmail.com" class="cont fa  fa-envelope"></a>
+        <a href="https://instagram.com/manases___" class="social fa fa-instagram"></a>
+        <a href="https://wa.me/+254114471302" class="social fa fa-whatsapp"></a>
+        <a href="https://github.com/manasess896" class="social fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social fa fa-linkedin"></a>
+        </div>
+            </div>
+         </footer>
+    <script src="assets\js\navbar.js"></script>
+    <script src="assets\js\txt.js"></script>
+    <script src="assets\js\main.js"></script>
+    <script src="assets\js\maintitle.js"></script>
+    <script src="assets\style\project.css"></script>
+    <script src="assets\js\back-to-top.js"></script>
 </body>
 </html>
-

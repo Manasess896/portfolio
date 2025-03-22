@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #2c3e50;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+    --accent-color: #e74c3c;
+  }
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+  
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: cursive;
+    background: linear-gradient(40deg, teal, var(--primary-color));
+    -wekit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1 2px 3px teal;
+    margin: 0;
+
+}

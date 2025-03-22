@@ -1,0 +1,81 @@
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15vh;
+    max-width: 300px;
+    width: 60vw;
+    max-height: 300px; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 2vh;
+}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.img-container:hover img {
+    transform: scale(1.05);
+}
+#intro-text{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.txt-container {
+    text-transform: capitalize;
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    height: 60px !important;
+    width: 100%;
+    overflow: hidden;
+}
+#blinking-cursor{
+    color: white;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.socials a {
+    padding: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.fa-github {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 1vw;
+}
+.fa-linkedin:hover {
+    color: blue; 
+}
+.fa-instagram {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.fa-instagram:hover {
+    color: orange;
+}

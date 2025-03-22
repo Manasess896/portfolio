@@ -1,0 +1,123 @@
+
+h4 {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.projects {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.project {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease forwards;
+    
+}
+.project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.p {
+    perspective: 1000px;
+    flex-shrink: 1;
+    background-color: green;
+}
+.main-con {
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.main-con.flip {
+    transform: rotateY(180deg);
+}
+.main-con:hover {
+    transform: translateY(-5px);
+}
+.front {
+    border: 1px solid black;
+    
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.back {
+    transform: rotateY(180deg);
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.back p{
+    text-transform: capitalize;
+}
+.title {
+    text-transform: capitalize;
+    background-color: teal;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.imglink {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color:teal;
+    z-index: 10;
+    padding: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.gitbtn{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
