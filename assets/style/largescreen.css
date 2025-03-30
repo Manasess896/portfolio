@@ -12,6 +12,7 @@
     }
     .main-title-container{
         border :none;
+        margin-top: 10vh;
     }
     .main-title{
         display: flex;

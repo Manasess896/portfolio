@@ -40,9 +40,14 @@ function moveStatusBar(buttonId) {
 
 function showContent(contentId) {
     const contents = document.querySelectorAll(".aboutme");
-    contents.forEach(content => content.classList.remove("active"));
+    contents.forEach(content => {
+        content.classList.remove("active");
+        // content.style.color = ""; // Reset color if needed
+    });
     document.getElementById(contentId).classList.add("active");
-    contents.style.color = "yellow";
+    // Instead of: contents.style.color = "yellow";
+    // Apply style to the active element if needed
+    document.getElementById(contentId).style.color = "yellow";
 }
 
 // Initialize the first button as active

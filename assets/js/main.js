@@ -1,6 +1,4 @@
-
-
-    // Add event listeners for navbar buttons
+// Add event listeners for navbar buttons
     document.getElementById('navbtn-home').addEventListener('click', () => {
         document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
     });
@@ -21,17 +19,15 @@
 
     
 // Function to flip project cards
-function flip(card) {
-    card.classList.toggle('flip');
+function flip(element) {
+    element.classList.toggle('flip');
 }
 
 // Function to toggle accordion
-function toggleAccordion(title) {
-    title.classList.toggle('active');
-    const mainCon = title.nextElementSibling;
-    if (mainCon.style.display === 'block') {
-        mainCon.style.display = 'none';
-    } else {
-        mainCon.style.display = 'block';
+function toggleAccordion(element) {
+    // You can add accordion functionality here if needed
+    const mainCon = element.nextElementSibling;
+    if (mainCon.classList.contains('flip')) {
+        mainCon.classList.remove('flip');
     }
 }
