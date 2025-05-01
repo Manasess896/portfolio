@@ -26,7 +26,7 @@ Welcome to my portfolio! This project showcases my skills, projects, and service
 
 ## Live Demo
 
-Visit the live demo [here](https://manases.infohub18.tech).
+Visit the live demo [here](https://manasess896.github.io/portfolio/).
 
 ## Contact
 
