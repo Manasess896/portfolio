@@ -1,0 +1,435 @@
+/* Custom CSS for Manases' Portfolio */
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* Default text color for sections with dark backgrounds */
+}
+
+a {
+    color: #00ADB5; /* Teal */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007A7F; /* Darker Teal */
+}
+
+.btn-primary {
+    background-color: #00ADB5;
+    border-color: #00ADB5;
+    color: #EEEEEE; /* Light gray for text on primary buttons */
+}
+
+.btn-primary:hover {
+    background-color: #007A7F;
+    border-color: #007A7F;
+}
+
+.btn-outline-primary {
+    color: #00ADB5;
+    border-color: #00ADB5;
+}
+
+.btn-outline-primary:hover {
+    background-color: #00ADB5;
+    color: #fff;
+}
+
+
+/* Navbar */
+#mainNav {
+    background-color: #222831; /* Dark background for navbar */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #00ADB5; /* Teal accent */
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
+#mainNav .navbar-brand {
+    color: #00ADB5; /* Teal */
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: #EEEEEE; /* Light gray for nav links */
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #00ADB5; /* Teal on hover/active */
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #222831; /* Solid dark on scroll */
+}
+
+/* Masthead (Hero Section) */
+.masthead {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(to bottom, rgba(34, 40, 49, 0.8) 0%, rgba(34, 40, 49, 0.9) 75%, #222831 100%), url("../images/background/hero-bg.jpg"); /* Updated background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #EEEEEE; /* Light gray text */
+}
+
+.masthead h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00ADB5; /* Teal */
+}
+
+.masthead .img-container img {
+    border: 5px solid #00ADB5; /* Teal border for profile image */
+}
+
+.masthead .text-white-50 {
+    color: rgba(238, 238, 238, 0.75) !important; /* Lighter than default white-50 for better contrast */
+}
+
+.masthead .btn-social {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px;
+}
+.masthead .btn-social i {
+    color: #EEEEEE;
+}
+.masthead .btn-social:hover i{
+    color: #00ADB5;
+}
+
+
+/* About Section */
+.about-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #393E46; /* Medium dark gray */
+}
+
+.about-section h2 {
+    color: #00ADB5; /* Teal */
+}
+
+.about-section .text-white-50 {
+    color: rgba(238, 238, 238, 0.85) !important;
+}
+
+.about-section .nav-tabs {
+    border-bottom: 1px solid #00ADB5; /* Teal border for tabs */
+}
+
+.about-section .nav-tabs .nav-link {
+    color: #EEEEEE; /* Light gray for tab links */
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.about-section .nav-tabs .nav-link.active {
+    color: #222831; /* Dark text for active tab */
+    background-color: #00ADB5; /* Teal background for active tab */
+    border-color: #00ADB5 #00ADB5 #00ADB5;
+}
+
+.about-section .nav-tabs .nav-link:hover {
+    border-color: #007A7F;
+    color: #00ADB5;
+}
+
+.about-section .tab-content {
+    padding-top: 2rem;
+}
+
+.about-section .card {
+    background-color: #222831; /* Dark card background */
+    border: none;
+    color: #EEEEEE; /* Light gray text in cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 173, 181, 0.3); /* Teal shadow */
+}
+
+.about-section .card h4 {
+    color: #00ADB5; /* Teal for card titles */
+}
+.about-section .card .small.text-black-50{
+    color: rgba(238, 238, 238, 0.7) !important;
+}
+
+.about-section .card hr {
+    border-top: 1px solid #00ADB5; /* Teal hr */
+    width: 50px;
+}
+
+.about-section .fab, .about-section .fas { /* Technology and service icons */
+    color: #00ADB5; /* Teal */
+}
+.about-section #technologies p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #EEEEEE;
+}
+
+
+/* Projects Section */
+.projects-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #EEEEEE; /* Light gray background */
+}
+
+.projects-section h2 {
+    color: #222831; /* Dark text for heading */
+}
+.projects-section .gitbtn-top {
+    background-color: #222831;
+    border-color: #222831;
+    color: #00ADB5;
+    font-weight: 500;
+}
+.projects-section .gitbtn-top:hover {
+    background-color: #393E46;
+    border-color: #393E46;
+    color: #00ADB5;
+}
+.projects-section .gitbtn-top i {
+    margin-left: 5px;
+}
+
+
+.project-card {
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* White background for project cards */
+    color: #222831; /* Dark text for project cards */
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.project-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #00ADB5; /* Teal accent on image bottom */
+}
+
+.project-card .card-title {
+    color: #00ADB5; /* Teal */
+    font-weight: 600;
+}
+
+.project-card .card-body{
+    min-height: 130px; /* Ensure consistent card height */
+}
+
+.project-card .card-footer {
+    background-color: transparent;
+    border-top: 1px solid #eee;
+}
+
+/* Contact Section */
+.contact-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem; /* Increased bottom padding */
+    background-color: #222831; /* Dark background */
+    color: #EEEEEE; /* Light gray text */
+    margin-bottom: 5rem; /* Added margin to the bottom of the section */
+}
+
+.contact-section h2, .contact-section h4 {
+    color: #00ADB5; /* Teal */
+}
+
+.contact-section .divider-light {
+    height: 0.2rem;
+    width: 4rem;
+    margin: 1.5rem auto;
+    background-color: #00ADB5; /* Teal divider */
+    opacity: 1;
+}
+
+.contact-section .text-white-75 {
+    color: rgba(238, 238, 238, 0.75) !important;
+}
+
+.contact-section .form-floating label {
+    color: #6c757d; /* Bootstrap default placeholder color for floating labels */
+}
+
+.contact-section .form-control {
+    background-color: #393E46; /* Medium dark gray for inputs */
+    border: 1px solid #00ADB5; /* Teal border */
+    color: #EEEEEE; /* Light gray text in inputs */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition */
+}
+
+.contact-section .form-control:focus {
+    background-color: #393E46;
+    border-color: #007A7F; /* Darker teal on focus */
+    color: #EEEEEE;
+    box-shadow: 0 0 0 0.25rem rgba(0, 173, 181, 0.25), 0 0 10px rgba(0, 173, 181, 0.5); /* Teal focus shadow + subtle glow */
+}
+
+.contact-section .form-control::placeholder {
+    color: rgba(238, 238, 238, 0.6);
+}
+
+.contact-section .btn-primary {
+    background-color: #00ADB5;
+    border-color: #00ADB5;
+    padding: 1rem 2rem; /* Larger button */
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Added transition */
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #007A7F;
+    border-color: #007A7F;
+    box-shadow: 0 0 10px rgba(0, 122, 127, 0.5); /* Subtle glow on hover */
+}
+
+.contact-section .social-icons-container .social-icon-link {
+    color: #EEEEEE;
+    transition: color 0.3s ease;
+    font-size: 1.2rem; /* Reduced icon size */
+    margin-right: 1rem; /* Added margin between icons */
+}
+
+.contact-section .social-icons-container .social-icon-link i {
+     transition: transform 0.3s ease-in-out;
+}
+
+.contact-section .social-icons-container .social-icon-link:hover i {
+    color: #00ADB5; /* Teal on hover */
+    transform: scale(1.2); /* Add a little pop effect */
+}
+
+/* Footer */
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #1a1e23; /* Even darker for footer */
+    color: rgba(238, 238, 238, 0.5);
+}
+
+/* Back to top button (Example - if you add one) */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none; /* Hidden by default, shown by JS */
+    background-color: #00ADB5;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #007A7F;
+}
+
+/* Animations */
+/* Fade in on scroll - apply to sections or elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide in from left for section titles */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Code Craft Section */
+.code-craft-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.code-craft-section img {
+    border: 5px solid #00ADB5; /* Teal border for the logo */
+}
+
+.code-craft-section .lead {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Card hover animation - already applied in project and about cards */
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .masthead {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .masthead h1 {
+        font-size: 2rem;
+    }
+    .masthead .text-white-50 {
+        font-size: 1rem;
+    }
+    #mainNav .navbar-nav {
+        margin-top: 1rem;
+        background-color: rgba(34, 40, 49, 0.95); /* Background for collapsed nav */
+        border-radius: 0.25rem;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .masthead {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .masthead h1 {
+        font-size: 1.8rem;
+    }
+     .masthead .img-container img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .about-section .card, .projects-section .project-card {
+        margin-bottom: 2rem;
+    }
+    .contact-section .col-md-6 {
+        margin-bottom: 1rem; /* Spacing for form fields on small screens */
+    }
+}
+
