@@ -10,429 +10,371 @@
         content="Manases, portfolio, web development, backend development, SEO,web developer portfolio, frontend developer,manases web developer,developer portfolio, web developer portfolio,Kenya">
     <meta name="google-site-verification" content="mqqbspzq3CoC63LpMrmRUv14laeKBMRSJOMm0wX1FN0" />
     <meta name="author" content="Manases">
-    <link rel="icon" type="image/x-icon" href="assets/images/icon/icon/downloadhvhsg14.png">
     <link rel="canonical" href="https://manases.infohub18.tech">
     <title>Manases' Portfolio - Web Developer</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Custom CSS (New) -->
     <link rel="stylesheet" href="assets/css/custom.css">
     <meta name="msvalidate.01" content="1DF3E74E24891C85F4CD02DF1E48B3D9" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="mainnav" id="mainnav">
         <div class="container">
-            <a class="navbar-brand" href="#home">Manases</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#my-projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#code-craft-solutions">Code Craft</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
+            <span class="nav-item active" onclick="scrollToSection('home')">home</span>
+            <span class="nav-item" onclick="scrollToSection('about')">About</span>
+            <span class="nav-item" onclick="scrollToSection('projects')">Projects</span>
+            <span class="nav-item" onclick="scrollToSection('code-craft')">Code Craft</span>
+            <span class="nav-item" onclick="scrollToSection('contact')">Contact</span>
         </div>
     </nav>
 
-    <header class="masthead" id="home">
-        <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
-                <div class="img-container mb-4">
-                    <img src="assets/images/mainimages/IMG-20241218-WA0011[1].jpg" alt="an image of manases"
-                        class="img-fluid rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
-                </div>
-                <h1 class="mx-auto my-0 text-uppercase">Manases Kamau</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5" id="intro-text">A passionate Web Developer.</h2>
-                <div class="socials-container">
-                    <a href="https://github.com/Manasess896/" class="btn btn-outline-light btn-social mx-1"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/manases___" class="btn btn-outline-light btn-social mx-1"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        class="btn btn-outline-light btn-social mx-1"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="mobile-menu">
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
 
-    <section class="about-section text-center" id="aboutme">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-white mb-4">About Me</h2>
-                    <p class="text-white-50">
-                        I'm a self-taught web developer with experience in designing new features from ideation to
-                        production, implementation of wireframes and design flows into high performance software
-                        applications. I take into consideration the user experience while writing reusable and efficient
-                        code. I passionately combine good design, technology, and innovation in all my projects, which I
-                        like to accompany from the first idea to release. Currently, I'm focused on frontend
-                        development, creating engaging and responsive user interfaces.
-                    </p>
-                </div>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-nav-container">
+            <div class="mobile-nav-header">
+                <span class="mobile-nav-title">Navigation</span>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <!-- Tabs for Technologies and Services -->
-            <ul class="nav nav-tabs justify-content-center mt-5 mb-4" id="aboutTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="technologies-tab" data-bs-toggle="tab"
-                        data-bs-target="#technologies" type="button" role="tab" aria-controls="technologies"
-                        aria-selected="true">Technologies</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services"
-                        type="button" role="tab" aria-controls="services" aria-selected="false">Services</button>
-                </li>
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link active">home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#code-craft" class="mobile-nav-link">Code Craft</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
             </ul>
-            <div class="tab-content" id="aboutTabContent">
-                <div class="tab-pane fade show active" id="technologies" role="tabpanel"
-                    aria-labelledby="technologies-tab">
-                    <div class="row justify-content-center">
-                        <div class="col-auto text-white-50 m-2"><i class="fab fa-html5 fa-3x"></i>
-                            <p>HTML</p>
-                        </div>
-                        <div class="col-auto text-white-50 m-2"><i class="fab fa-css3-alt fa-3x"></i>
-                            <p>CSS</p>
-                        </div>
-                        <div class="col-auto text-white-50 m-2"><i class="fab fa-js-square fa-3x"></i>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="col-auto text-white-50 m-2"><i class="fab fa-bootstrap fa-3x"></i>
-                            <p>Bootstrap</p>
-                        </div>
-                        <div class="col-auto text-white-50 m-2"><i class="fab fa-php fa-3x"></i>
-                            <p>PHP</p>
-                        </div>
-                        <div class="col-auto text-white-50 m-2"><i class="fab fa-python fa-3x"></i>
-                            <p>Python</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
-                    <div class="row">
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-laptop-code fa-3x mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Web Development</h4>
-                                    <hr class="my-4 mx-auto" />
-                                    <div class="small text-black-50">Full-stack web application development, creating
-                                        responsive and user-friendly websites.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-server fa-3x mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Backend Development</h4>
-                                    <hr class="my-4 mx-auto" />
-                                    <div class="small text-black-50">Server-side logic, database management, and API
-                                        development.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 mb-md-0">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-search-dollar fa-3x mb-2"></i>
-                                    <h4 class="text-uppercase m-0">SEO</h4>
-                                    <hr class="my-4 mx-auto" />
-                                    <div class="small text-black-50">Search Engine Optimization to improve website
-                                        visibility and ranking.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt-4">
-                            <div class="card py-4 h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-robot fa-3x mb-2"></i>
-                                    <h4 class="text-uppercase m-0">Social Media Automation</h4>
-                                    <hr class="my-4 mx-auto" />
-                                    <div class="small text-black-50">Automating social media posts and interactions to
-                                        enhance online presence.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
 
-    <section id="my-projects" class="projects-section bg-light">
-        <div class="container">
-            <h2 class="text-center text-black mb-5">Projects</h2>
-            <div class="text-center mb-4">
-                <a href="https://github.com/manasess896" class="btn btn-primary gitbtn-top" target="_blank">View More on
-                    GitHub <i class="fab fa-github"></i></a>
+
+
+    <div class="main-container" id="main-container">
+        <section class="scroll-section home-section" id="home">
+            <div class="section-content">
+                <div class="home-card">
+                    <div class="home-layout">
+                        <div class="home-text">
+                            <h1 class="profile-name">Hi, I'm Manases Kamau</h1>
+                            <div class="profile-title-container">
+                                <span class="profile-title-static">I'm a </span>
+                                <span class="profile-title-animated" id="techChanger">Frontend Developer</span>
+                            </div>
+                            <div class="profile-actions">
+                                <a href="Document 4.pdf" download="Manases_Kamau_CV.pdf"
+                                    class="btn btn-primary profile-btn">
+                                    <i class="fas fa-download me-2"></i>Download CV
+                                </a>
+                                <button class="btn btn-outline-primary profile-btn"
+                                    onclick="scrollToSection('contact')">
+                                    <i class="fas fa-envelope me-2"></i>Let's Work Together
+                                </button>
+                            </div>
+                            <div class="profile-socials">
+                                <a href="https://github.com/Manasess896/" class="social-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://instagram.com/manases___" class="social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    class="social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home-image">
+                            <img src="assets/images/mainimages/IMG-20241218-WA0011[1].jpg" alt="Manases Kamau"
+                                class="profile-image">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row justify-content-center">
-                <!-- Project 1: Weather Website -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <img src="assets\images\project images\voyager.jpg" class="card-img-top"
-                            alt="Weather Website Screenshot">
-                        <div class="card-body">
-                            <h5 class="card-title">Weather Website</h5>
-                            <p class="card-text">WeatherVoyager is a web application that helps travelers find
-                                destinations with their ideal weather conditions. By
-                                selecting preferred weather parameters, users receive personalized travel destination
-                                recommendations.
+        </section>
+
+        <section class="scroll-section about-section" id="about">
+            <div class="section-content">
+                <div class="about-card">
+                    <h2 class="section-title">About Me</h2>
+
+                    <ul class="nav nav-tabs about-tabs justify-content-center mb-4" id="aboutTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="about-tab" data-bs-toggle="tab"
+                                data-bs-target="#about-content" type="button" role="tab" aria-controls="about-content"
+                                aria-selected="true">
+                                <i class="fas fa-user me-2"></i>About
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="technologies-tab" data-bs-toggle="tab"
+                                data-bs-target="#technologies" type="button" role="tab" aria-controls="technologies"
+                                aria-selected="false">
+                                <i class="fas fa-tools me-2"></i>Technologies
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services"
+                                type="button" role="tab" aria-controls="services" aria-selected="false">
+                                <i class="fas fa-briefcase me-2"></i>Services
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="aboutTabContent">
+
+                        <div class="tab-pane fade show active" id="about-content" role="tabpanel"
+                            aria-labelledby="about-tab">
+                            <p class="about-description">
+                                I'm a self-taught web developer with experience in designing new features from ideation
+                                to
+                                production, implementation of wireframes and design flows into high performance software
+                                applications. I take into consideration the user experience while writing reusable and
+                                efficient
+                                code. I passionately combine good design, technology, and innovation in all my projects,
+                                which I
+                                like to accompany from the first idea to release.
+                            </p>
+                            <p class="about-description">
+                                Currently, I'm focused on frontend development, creating engaging and responsive user
+                                interfaces
+                                while also building robust backend systems and providing SEO optimization services.
                             </p>
                         </div>
-                        <div class="card-footer text-center">
+
+                        <div class="tab-pane fade" id="technologies" role="tabpanel" aria-labelledby="technologies-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="tech-category-title"><i class="fas fa-code me-2"></i>Frontend</h5>
+                                    <div class="technologies-grid mb-4">
+                                        <div class="tech-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+                                        <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                                        <div class="tech-item"><i class="fab fa-js-square"></i><span>JavaScript</span>
+                                        </div>
+                                        <div class="tech-item"><i class="fab fa-bootstrap"></i><span>Bootstrap</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="tech-category-title"><i class="fas fa-server me-2"></i>Backend</h5>
+                                    <div class="technologies-grid mb-4">
+                                        <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                                        <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+                                        <div class="tech-item"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+                                        <div class="tech-item"><i class="fab fa-google"></i><span>Firebase</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h5 class="tech-category-title"><i class="fas fa-tools me-2"></i>Tools & DevOps</h5>
+                                    <div class="technologies-grid">
+                                        <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                                        <div class="tech-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+                                        <div class="tech-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                            <div class="d-flex flex-wrap gap-3 justify-content-center align-items-stretch">
+                                <div class="col-md-2 mb-1">
+                                    <div class="service-card">
+                                        <div class="service-card-body text-center">
+                                            <i class="fas fa-laptop-code fa-3x mb-1"></i>
+                                            <h4 class="service-title">Web Development</h4>
+                                            <hr class="service-divider" />
+                                            <div class="service-description">Full-stack web application development,
+                                                creating
+                                                responsive and user-friendly websites.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <div class="service-card">
+                                        <div class="service-card-body text-center">
+                                            <i class="fas fa-server fa-3x mb-1"></i>
+                                            <h4 class="service-title">Backend Development</h4>
+                                            <hr class="service-divider" />
+                                            <div class="service-description">Server-side logic, database management, and
+                                                API
+                                                development.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <div class="service-card">
+                                        <div class="service-card-body text-center">
+                                            <i class="fas fa-search-dollar fa-3x mb-3"></i>
+                                            <h4 class="service-title">SEO</h4>
+                                            <hr class="service-divider" />
+                                            <div class="service-description">Search Engine Optimization to improve
+                                                website
+                                                visibility and ranking.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <div class="service-card">
+                                        <div class="service-card-body text-center">
+                                            <i class="fas fa-robot fa-3x mb-3"></i>
+                                            <h4 class="service-title">Social Media Automation</h4>
+                                            <hr class="service-divider" />
+                                            <div class="service-description">Automating social media posts and
+                                                interactions to
+                                                enhance online presence.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scroll-section projects-section" id="projects">
+            <div class="section-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="assets\images\project images\voyager.jpg" alt="Weather Website Screenshot">
+                        <div class="project-info">
+                            <h5>Weather Website</h5>
+                            <p>A web app to find destinations with ideal weather conditions.</p>
                             <a href="https://weather1-0.onrender.com/home" class="btn btn-outline-primary btn-sm"
                                 target="_blank">Visit Site</a>
                         </div>
                     </div>
-                </div>
-                <!-- Project 2: Request a Movie -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
+                    <div class="project-card">
                         <img src="assets\images\project images\TMDB Explorer - Your Movie & TV Database.png"
-                            class="card-img-top" alt="tmdb explorer Screenshot">
-                        <div class="card-body">
-                            <h5 class="card-title">TMDB Explorer</h5>
-                            <p class="card-text">TMDB Explorer is a PHP web application that consumes The Movie Database
-                                (TMDB) API to display information about movies,
-                                TV shows, and actors. It provides an intuitive interface for browsing trending content,
-                                searching for specific titles or
-                                people, and exploring detailed information. </p>
-                        </div>
-                        <div class="card-footer text-center">
+                            alt="tmdb explorer Screenshot">
+                        <div class="project-info">
+                            <h5>TMDB Explorer</h5>
+                            <p>A PHP app using the TMDB API to browse movies and TV shows.</p>
                             <a href="https://tmdb-explorer-7dc5031211d9.herokuapp.com/index.php"
                                 class="btn btn-outline-primary btn-sm" target="_blank">Visit Site</a>
                         </div>
                     </div>
-                </div>
-                <!-- Project 3: School Website -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <img src="assets/images/project images/Screenshot (7).png" class="card-img-top"
-                            alt="School Website Screenshot">
-                        <div class="card-body">
-                            <h5 class="card-title">School Website Template</h5>
-                            <p class="card-text">A template for school websites with form handling and Firebase
-                                integration.</p>
-                        </div>
-                        <div class="card-footer text-center">
+                    <div class="project-card">
+                        <img src="assets/images/project images/Screenshot (7).png" alt="School Website Screenshot">
+                        <div class="project-info">
+                            <h5>School Website Template</h5>
+                            <p>A school website template with Firebase integration.</p>
                             <a href="https://manasess896.github.io/school/" class="btn btn-outline-primary btn-sm"
                                 target="_blank">Visit Site</a>
                         </div>
                     </div>
-                </div>
-                <!-- Project 4: X-Bot -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <img src="assets/images/project images/Screenshot (6).png" class="card-img-top"
-                            alt="X-Bot Screenshot">
-                        <div class="card-body">
-                            <h5 class="card-title">X-Bot</h5>
-                            <p class="card-text">A Python bot for automating posts to X (Twitter) using APIs.</p>
-                        </div>
-                        <div class="card-footer text-center">
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="assets/images/project images/Screenshot (6).png" alt="X-Bot Screenshot">
+                        <div class="project-info">
+                            <h5>X-Bot</h5>
+                            <p>A Python bot for automating posts to X (Twitter).</p>
                             <a href="https://github.com/Manasess896/X-bot" class="btn btn-outline-primary btn-sm"
                                 target="_blank">View on GitHub</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card project-card h-100">
-                        <img src="assets\images\project images\authenticator.png" class="card-img-top"
-                            alt="Infohub18 Screenshot">
-                        <div class="card-body">
-                            <h5 class="card-title">PHP AUTHENTICATION SYSTEM</h5>
-                            <p class="card-text">A secure, modern authentication system built with PHP and MongoDB,
-                                featuring comprehensive security measures including
-                                secure password reset functionality, CSRF protection, and reCAPTCHA integration.</p>
-                            <!-- Placeholder description -->
-                        </div>
-                        <div class="card-footer text-center">
+                    <div class="project-card">
+                        <img src="assets\images\project images\authenticator.png" alt="Infohub18 Screenshot">
+                        <div class="project-info">
+                            <h5>PHP Authentication System</h5>
+                            <p>A secure authentication system using PHP and MongoDB.</p>
                             <a href="https://github.com/Manasess896/PHP-AUTHENTICATON-SYSTEM"
                                 class="btn btn-outline-primary btn-sm" target="_blank">Visit Site</a>
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-4">
+                    <a href="https://github.com/manasess896" class="btn btn-primary gitbtn-top" target="_blank">View
+                        More on GitHub <i class="fab fa-github"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="code-craft-solutions" class="code-craft-section bg-dark text-white-50">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 align-items-center">
-                <div class="col-lg-6">
+        <section class="scroll-section code-craft-section" id="code-craft">
+            <div class="section-content">
+                <div class="code-craft-card">
                     <img src="assets/images/mainimages/WhatsApp Image 2025-05-15 at 20.56.41_275fc1b9.jpg"
-                        class="img-fluid rounded mb-4 mb-lg-0" alt="Code Craft Website Solutions Logo">
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="text-white mb-3 section-title slide-in-left">Code Craft Website Solutions</h2>
-                    <p class="lead">
-                        Code Craft Website Solutions is a modern web development startup specializing in creating
-                        responsive front-end designs, robust back-end systems, and SEO-optimized websites. We help
-                        businesses build a powerful online presence through clean code, smart design, and
-                        search-friendly structure.
-                    </p>
-                    <p class="fst-italic">Let us craft your code — from idea to launch!</p>
-                    <a href="https://code-craft-website-solutions-2d68a0b57273.herokuapp.com/index.php"
-                        class="btn btn-primary mt-3" target="_blank">Visit Code Craft Solutions</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-section bg-black" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="text-white mt-0">Let&#39;s Get In Touch!</h2>
-                    <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-5">Ready to start your next project or just want to say hi? Send me a
-                        message or reach out on social media!</p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                <div class="col-lg-6">
-                    <form id="contactForm" action="https://formspree.io/f/moqgpbjg" method="POST"
-                        class="needs-validation" novalidate>
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" style="height: 10rem"
-                                data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
-                        </div>
-                        <!-- Submit Button-->
-                        <div class="d-grid">
-                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h4 class="text-white mb-4">Connect with me on:</h4>
-                    <div class="social-icons-container d-flex flex-wrap justify-content-center">
-                        <a href="tel:+254114471302" class="social-icon-link m-2" aria-label="Call me"><i
-                                class="fas fa-phone fa-2x"></i></a>
-                        <a href="mailto:manasesskamau1053@gmail.com" class="social-icon-link m-2"
-                            aria-label="Email me"><i class="fas fa-envelope fa-2x"></i></a>
-                        <a href="https://wa.me/+254114471302" class="social-icon-link m-2" aria-label="WhatsApp me"><i
-                                class="fab fa-whatsapp fa-2x"></i></a>
-                        <a href="https://github.com/manasess896" class="social-icon-link m-2"
-                            aria-label="My GitHub profile"><i class="fab fa-github fa-2x"></i></a>
-                        <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                            class="social-icon-link m-2" aria-label="My LinkedIn profile"><i
-                                class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="https://instagram.com/manases___" class="social-icon-link m-2"
-                            aria-label="My Instagram profile"><i class="fab fa-instagram fa-2x"></i></a>
+                        alt="Code Craft Website Solutions Logo">
+                    <div class="code-craft-info">
+                        <h2 class="section-title">Code Craft Website Solutions</h2>
+                        <p class="lead">
+                            Code Craft Website Solutions is a modern web development startup specializing in creating
+                            responsive front-end designs, robust back-end systems, and SEO-optimized websites. We help
+                            businesses build a powerful online presence through clean code, smart design, and
+                            search-friendly structure.
+                        </p>
+                        <p class="fst-italic">Let us craft your code — from idea to launch!</p>
+                        <a href="https://code-craft-website-solutions-2d68a0b57273.herokuapp.com/index.php"
+                            class="btn btn-primary mt-3" target="_blank">Visit Code Craft Solutions</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer bg-black text-white-50">
-        <div class="container px-4 px-lg-5">Copyright &copy; Manases Kamau <span id="currentYear"></span></div>
-    </footer>
+        <section class="scroll-section contact-section" id="contact">
+            <div class="section-content contact-shit">
+                <div class="contact-card">
+                    <h2 class="section-title contact-h2">Let's Get In Touch!</h2>
+                    <p class="contact-description">Ready to start your next project or just want to say hi? Send me a
+                        message or reach out on social media!</p>
+                    <form id="contactForm" action="https://formspree.io/f/moqgpbjg" method="POST"
+                        class="needs-validation" novalidate>
+                        <div class="form-floating">
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Full name"
+                                required />
+                            <label for="name">Full name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="email" name="email" type="email" placeholder="Email address"
+                                required />
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" name="message" placeholder="Message"
+                                style="height: 10rem" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="d-grid">
+                            <button
+                                style="max-width:250px;background-color:teal; border-radius:1vw;margin:2vw; padding:1vw; border:none;"
+                                id="submitButton" type="submit">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <div class="social-icons-container">
+                        <a href="tel:+254114471302" class="social-icon-link"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:manasesskamau1053@gmail.com" class="social-icon-link"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/+254114471302" class="social-icon-link"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Bootstrap JS Bundle -->
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- Custom JS -->
+
     <script src="assets/js/custom.js"></script>
-    <!-- Typed.js for typing effect (if you want to keep it) -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <script>
-        // Activate Bootstrap scrollspy on the main nav element
-        const mainNav = document.body.querySelector('#mainNav');
-        if (mainNav) {
-            new bootstrap.ScrollSpy(document.body, {
-                target: '#mainNav',
-                offset: 74,
-            });
-        };
-
-        // Navbar shrink function
-        var navbarShrink = function () {
-            const navbarCollapsible = document.body.querySelector('#mainNav');
-            if (!navbarCollapsible) {
-                return;
-            }
-            if (window.scrollY === 0) {
-                navbarCollapsible.classList.remove('navbar-shrink')
-            } else {
-                navbarCollapsible.classList.add('navbar-shrink')
-            }
-        };
-        // Shrink the navbar 
-        navbarShrink();
-        // Shrink the navbar when page is scrolled
-        document.addEventListener('scroll', navbarShrink);
-
-        // Typed.js initialization (example)
-        if (document.getElementById('intro-text')) {
-            var typed = new Typed('#intro-text', {
-                strings: ['A Passionate Web Developer.', 'Frontend Specialist.', 'Building Cool Things Online.'],
-                typeSpeed: 50,
-                backSpeed: 25,
-                loop: true
-            });
-        }
-
-        // Set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Bootstrap form validation
-        (function () {
-            'use strict'
-            var forms = document.querySelectorAll('.needs-validation')
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
     </script>
 </body>
 

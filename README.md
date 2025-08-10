@@ -1,6 +1,6 @@
 # Manases' Portfolio
 
-Welcome to my portfolio! This project showcases my skills, projects, and services as a web developer.
+home to my portfolio! This project showcases my skills, projects, and services as a web developer.
 
 ## Features
 
@@ -31,6 +31,7 @@ Visit the live demo [here](https://manasess896.github.io/portfolio/).
 ## Contact
 
 Feel free to reach out to me via:
+
 - **Email**: [manasesskamau1053@gmail.com](mailto:manasesskamau1053@gmail.com)
 - **Phone**: +254114471302
 - **GitHub**: [Manasess896](https://github.com/Manasess896)
