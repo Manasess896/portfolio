@@ -6,13 +6,14 @@ $pageTitle = "Projects | Manases Kamau";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the project portfolio of Manases Kamau (Code Craft). Featuring AI WhatsApp Bots, Secure PHP Auth Systems, Automation Tools, and Web Platforms.">
+    <meta name="description" content="Explore the portfolio of Code Craft Website Solutions. Creating custom websites, AI WhatsApp Bots, social media automation tools, secure systems, and more innovative digital solutions.">
     <meta name="author" content="Manases Kamau">
-    <meta name="keywords" content="Code Craft Projects, PHP Auth, WhatsApp Bot, Python Automation, Web Development Portfolio, API Integration">
-    <meta property="og:title" content="Project Portfolio | Manases Kamau">
-    <meta property="og:description" content="A curated list of technical projects including AI bots, secure authentication systems, and custom web platforms.">
+    <meta name="keywords" content="Code Craft Projects, Custom Websites, Social Media Automation, PHP Auth, WhatsApp Bot, Python Automation, Web Development Portfolio, API Integration">
+    <meta property="og:title" content="Project Portfolio | Code Craft Website Solutions">
+    <meta property="og:description" content="A curated list of technical projects including custom websites, social media automation, AI bots, and secure web platforms.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://manases.infohub18.tech/projects">
+    <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/projects">
+    <link rel="icon" href="/images/company_logo_.jpg" type="image/jpeg">
     <title><?php echo $pageTitle; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -204,13 +205,19 @@ $pageTitle = "Projects | Manases Kamau";
          <section class="py-4 text-center">
             
             <div class="profile-socials mb-4 d-flex justify-content-center gap-4">
-                <a href="https://github.com/Manasess896/" class="text-dark hover-opacity" aria-label="GitHub">
-                    <i class="fab fa-github fa-lg"></i>
+                <a href="https://wa.me/+254114471302" class="text-dark hover-opacity" aria-label="WhatsApp" target="_blank">
+                    <i class="fab fa-whatsapp fa-lg"></i>
                 </a>
-                <a href="https://instagram.com/manases___" class="text-dark hover-opacity" aria-label="Instagram">
+                <a href="https://www.instagram.com/manases___/" class="text-dark hover-opacity" aria-label="Instagram" target="_blank">
                     <i class="fab fa-instagram fa-lg"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-dark hover-opacity" aria-label="LinkedIn">
+                <a href="mailto:manasesskamau1053@gmail.com" class="text-dark hover-opacity" aria-label="Email">
+                    <i class="fas fa-envelope fa-lg"></i>
+                </a>
+                <a href="https://github.com/Manasess896/" class="text-dark hover-opacity" aria-label="GitHub" target="_blank">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-dark hover-opacity" aria-label="LinkedIn" target="_blank">
                     <i class="fab fa-linkedin fa-lg"></i>
                 </a>
             </div>

@@ -12,7 +12,8 @@ $pageTitle = "Contact | Manases Kamau";
   <meta name="keywords" content="Contact Web Developer, Hire Backend Developer, Kenya Web Design, Code Craft Contact">
   <meta property="og:title" content="Contact | Manases Kamau">
   <meta property="og:description" content="Get in touch for professional web development and system automation services.">
-  <meta property="og:url" content="https://manases.infohub18.tech/contact-us">
+  <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/contact-us">
+  <link rel="icon" href="/images/company_logo_.jpg" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -87,6 +88,13 @@ $pageTitle = "Contact | Manases Kamau";
     <hr class="my-5 doc-divider">
 
     <section class="py-4 text-center">
+      <div class="mb-3">
+        <a href="https://wa.me/+254114471302" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/manases___/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:manasesskamau1053@gmail.com" class="text-secondary mx-2 fs-5"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
       <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / Code Craft Website Solutions.</p>
     </section>
     <div class="d-flex align-items-center justify-content-center gap-2 mb-2">

@@ -9,6 +9,7 @@ $pageTitle = "Page Not Found | Manases Kamau";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Page Not Found - Code Craft Website Solutions.">
   <meta name="author" content="Manases Kamau">
+  <link rel="icon" href="/images/company_logo_.jpg" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -33,6 +34,13 @@ $pageTitle = "Page Not Found | Manases Kamau";
     </a>
 
     <div class="mt-5 pt-5 border-top w-50">
+      <div class="mb-3">
+        <a href="https://wa.me/+254114471302" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/manases___/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:manasesskamau1053@gmail.com" class="text-secondary mx-2 fs-5"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
       <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
         <img src="images/company_logo_.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
         <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>

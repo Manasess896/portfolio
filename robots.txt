@@ -5,4 +5,4 @@ Disallow: /admin/
 Disallow: /assets/css/
 Disallow: /assets/js/
 
-Sitemap: https://manases.infohub18.tech/sitemap.xml
+Sitemap: https://code-craft-website-solutions.onrender.com/sitemap.xml
