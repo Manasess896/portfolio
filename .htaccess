@@ -1,0 +1,71 @@
+rewriteEngine On
+<IfModule mod_headers.c>
+   
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://unpkg.com https://accounts.google.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com data:; img-src 'self' data: https: blob: https://image.tmdb.org; connect-src 'self' https: https://api.themoviedb.org; frame-src https://www.google.com https://accounts.google.com https://www.youtube.com https://youtube.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"
+
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    Header always set X-Content-Type-Options "nosniff"
+    
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+    
+    Header unset X-Powered-By
+    Header unset Server
+    
+</IfModule>
+
+ServerSignature Off
+Options -Indexes
+DirectoryIndex home
+
+RewriteRule ^404/?$ 404.php [L]
+
+<FilesMatch "^\.|^composer\.(json|lock)$|^package(-lock)?\.json$|\.(bak|config|sql|ini|log|sh|inc|swp|dist|env|todo|md)$">
+    Require all denied
+</FilesMatch>
+
+# Protect includes directory
+# <Directory "includes">
+#     Require all denied
+# </Directory>
+# Protect includes directory (htaccess-safe)
+RewriteRule ^includes(/|$) - [F,L]
+
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+    php_flag expose_php Off
+    php_value session.cookie_httponly 1
+    php_value session.use_strict_mode 1
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json text/xml application/xml
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/font-woff2 "access plus 1 month"
+</IfModule>
+RewriteCond %{THE_REQUEST} \s/index\.php[\s?] [NC]
+RewriteRule ^index\.php$ /home [R=301,L]
+
+RewriteRule ^home/?$ index.php [L]
+RewriteRule ^contact-us/?$ contact.php [L]
+
+RewriteRule ^projects/?$ projects.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ 404.php [L]

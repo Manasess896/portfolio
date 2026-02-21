@@ -1,0 +1,170 @@
+<?php
+$pageTitle = "Manases Kamau | Code Craft Website Solutions";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manases Kamau - Web Systems Developer. Building secure, scalable web systems, APIs, and automation tools at Code Craft Website Solutions.">
+  <meta name="author" content="Manases Kamau">
+  <meta name="keywords" content="Web Developer, Backend Developer, PHP, Python, Automation, APIs, Code Craft Website Solutions, Manases Kamau, Nairobi">
+  <meta property="og:title" content="Manases Kamau | Code Craft Website Solutions">
+  <meta property="og:description" content="Backend Systems, API Integration, and Automation. View my portfolio of secure web solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://manases.infohub18.tech/">
+  <meta property="og:image" content="https://manases.infohub18.tech/assets/images/mainimages/IMG-20241218-WA0011[1].jpg">
+  <title><?php echo $pageTitle; ?></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container main-document">
+    <header class="d-flex flex-wrap justify-content-between align-items-center py-4 mb-5 border-bottom">
+      <div class="col-md-6 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
+          <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
+          <span class="small text-muted text-uppercase ls-1">Code Craft Website Solutions</span>
+        </a>
+      </div>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="projects" class="nav-link px-3 text-dark">Work</a></li>
+        <li><a href="contact-us" class="nav-link px-3 text-dark">Contact</a></li>
+        <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
+      </ul>
+    </header>
+
+    <section class="py-5 mb-5 doc-section">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="display-5 fw-normal mb-4 serif-font">Web Systems Developer</h1>
+          <p class="lead mb-4">
+            I build secure, scalable web systems.<br>
+            APIs. Automation. Admin Panels. Infrastructure.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="projects" class="btn btn-outline-dark rounded-0 px-4">View All Work</a>
+            <a href="contact-us" class="btn btn-link text-dark text-decoration-none px-0">Get in Touch &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5 doc-divider">
+
+    <section class="py-5 doc-section">
+      <h2 class="mb-4 serif-font">Technical Stack</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h6 class="text-uppercase small fw-bold text-secondary ls-1 mb-3">Frontend & Backend</h6>
+          <div>
+            <span class="stack-badge">HTML5</span>
+            <span class="stack-badge">CSS3</span>
+            <span class="stack-badge">JavaScript</span>
+            <span class="stack-badge">Bootstrap 5</span>
+            <span class="stack-badge">PHP</span>
+            <span class="stack-badge">Python</span>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h6 class="text-uppercase small fw-bold text-secondary ls-1 mb-3">Database & Tools</h6>
+          <div>
+            <span class="stack-badge">MongoDB</span>
+            <span class="stack-badge">MySQL</span>
+            <span class="stack-badge">PostgreSQL</span>
+            <span class="stack-badge">Git</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h6 class="text-uppercase small fw-bold text-secondary ls-1 mb-3"> specialized Services</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="stack-badge">Web Development</span>
+            <span class="stack-badge">Web Design</span>
+            <span class="stack-badge">Automation</span>
+            <span class="stack-badge">API Integration</span>
+            <span class="stack-badge">SEO Optimization</span>
+            <span class="stack-badge">Domain Configuration</span>
+            <span class="stack-badge">Social Media Automation</span>
+            <span class="stack-badge">Website Hosting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5 doc-divider">
+
+    <section id="work" class="py-5 doc-section">
+      <div class="row mb-5 align-items-end">
+        <div class="col-6">
+          <h2 class="mb-0 serif-font">Selected Work</h2>
+        </div>
+        <div class="col-6 text-end">
+          <a href="projects" class="small text-muted text-decoration-none">View Archive &rarr;</a>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover align-middle custom-table">
+          <thead class="light-th">
+            <tr>
+              <th scope="col" class="fw-normal text-secondary text-uppercase small ls-1" style="width: 40%;">Project</th>
+              <th scope="col" class="fw-normal text-secondary text-uppercase small ls-1">Stack</th>
+              <th scope="col" class="text-end fw-normal text-secondary text-uppercase small ls-1">Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-3">
+                <span class="fw-bold d-block">Advanced AI WhatsApp Bot</span>
+                <span class="small text-muted">Intelligent conversational agent</span>
+              </td>
+              <td><span class="small font-monospace text-muted">Flask / Groq API</span></td>
+              <td class="text-end"><a href="projects" class="text-dark small">&rarr;</a></td>
+            </tr>
+            <tr>
+              <td class="py-3">
+                <span class="fw-bold d-block">Secure PHP Auth System</span>
+                <span class="small text-muted">Enterprise-grade security template</span>
+              </td>
+              <td><span class="small font-monospace text-muted">PHP / MongoDB / 2FA</span></td>
+              <td class="text-end"><a href="projects" class="text-dark small">&rarr;</a></td>
+            </tr>
+            <tr>
+              <td class="py-3">
+                <span class="fw-bold d-block">Bouquets by Lynn</span>
+                <span class="small text-muted">E-commerce with Smart Links</span>
+              </td>
+              <td><span class="small font-monospace text-muted">PHP / Custom Admin</span></td>
+              <td class="text-end"><a href="projects" class="text-dark small">&rarr;</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <hr class="my-5 doc-divider">
+
+    <section class="py-4 text-center">
+      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / Code Craft Website Solutions.</p>
+    </section>
+    <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+      <img src="images/company_logo_.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+      <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

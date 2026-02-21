@@ -1,5 +1,8 @@
 User-agent: *
-Disallow: /private/
 Allow: /
+Disallow: /includes/
+Disallow: /admin/
+Disallow: /assets/css/
+Disallow: /assets/js/
 
 Sitemap: https://manases.infohub18.tech/sitemap.xml

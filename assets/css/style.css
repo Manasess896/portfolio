@@ -1,0 +1,166 @@
+:root {
+    --bg-color: #fcfcfc;
+    --text-color: #1a1a1a;
+    --accent-color: #444;
+    --border-color: #e0e0e0;
+}
+
+body {
+    background-color: #c7c7c7; 
+    color: var(--text-color);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.serif-font {
+    font-family: 'Merriweather', "Georgia", serif;
+}
+
+.main-document {
+    max-width: 900px;
+    padding: 3rem 4rem;
+    background-color: #fff;
+    min-height: 90vh;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 5px 20px rgba(0,0,0,0.05); /* Paper shadow */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: none;
+    position: relative;
+}
+
+.main-document::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' /%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .main-document {
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+        border: none;
+        padding: 2rem 1.5rem; /* Better padding for mobile */
+    }
+}
+
+.name-brand {
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.doc-divider {
+    border-color: var(--text-color);
+    opacity: 0.1;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.nav-link:hover {
+    text-decoration: underline !important;
+}
+
+.btn-outline-dark {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--text-color);
+    color: #fff;
+}
+
+.custom-list li::before {
+    content: "— ";
+    color: #ccc;
+    margin-right: 5px;
+}
+
+.stack-badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.85em;
+    font-weight: 500;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hover-underline:hover {
+    text-decoration: underline !important;
+}
+
+.transition {
+    transition: all 0.2s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: #fcfcfc;
+}
+
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+
+.bottom-sticker {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bottom-sticker:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    color: #000;
+}
+
+.bottom-sticker img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .bottom-sticker {
+        bottom: 15px;
+        right: 15px;
+        left: 15px;
+        justify-content: center;
+    }
+}
