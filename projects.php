@@ -33,11 +33,9 @@ function logVisitorToMongoDB() {
             return;
         }
 
-        // Create MongoDB client
         $client = new Client($url);
         $collection = $client->selectCollection($mydatabase, 'dev-logs');
         
-        // Prepare visitor data
         $visitorData = [
             'url' => $_SERVER['REQUEST_URI'] ?? 'Unknown',
             'full_url' => (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ($_SERVER['REQUEST_URI'] ?? ''),
@@ -57,16 +55,14 @@ function logVisitorToMongoDB() {
             'remote_port' => $_SERVER['REMOTE_PORT'] ?? 'Unknown',
         ];
         
-        // Insert into MongoDB
         $collection->insertOne($visitorData);
         
     } catch (Exception $e) {
-        // Silently fail to not disrupt user experience
+    
         error_log('MongoDB logging error: ' . $e->getMessage());
     }
 }
 
-// Log the visitor
 logVisitorToMongoDB();
 ?>
 <!DOCTYPE html>
