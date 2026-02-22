@@ -9,7 +9,7 @@ $pageTitle = "Page Not Found | Manases Kamau";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Page Not Found - Code Craft Website Solutions.">
   <meta name="author" content="Manases Kamau">
-  <link rel="icon" href="/images/company_logo_.jpg" type="image/jpeg">
+  <link rel="icon" href="/images/company_logo.jpg" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">

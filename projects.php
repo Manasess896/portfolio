@@ -13,10 +13,11 @@ $pageTitle = "Projects | Manases Kamau";
     <meta property="og:description" content="A curated list of technical projects including custom websites, social media automation, AI bots, and secure web platforms.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/projects">
-    <link rel="icon" href="/images/company_logo_.jpg" type="image/jpeg">
+    <link rel="icon" href="/images/company_logo.jpg" type="image/jpeg">
     <title><?php echo $pageTitle; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
@@ -223,7 +224,7 @@ $pageTitle = "Projects | Manases Kamau";
             </div>
 
             <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-                <img src="images/company_logo_.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+                <img src="images/company_logo.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
                 <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>
             </div>
             

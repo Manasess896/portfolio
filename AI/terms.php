@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the Terms of Service for our  WhatsApp Bot.Understand the rules, user conduct, and liabilities associated with using our AI-powered service.">
+    <meta name="keywords" content="Terms of Service, WhatsApp Bot, AI Chatbot, User Agreement, Terms and Conditions, Privacy, AI Rules">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manases.net/AI/terms.php">
+    <meta property="og:title" content="Terms of Service - Intelligent ChatBot">
+    <meta property="og:description" content="User agreement and terms of use for the Intelligent WhatsApp Bot powered by LLaMA and Groq API.">
+    <meta property="og:image" content="https://manases.net/images/company_logo.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://manases.net/AI/terms.php">
+    <meta property="twitter:title" content="Terms of Service - Intelligent ChatBot">
+    <meta property="twitter:description" content="User agreement and terms of use for the Intelligent WhatsApp Bot powered by LLaMA and Groq API.">
+    <meta property="twitter:image" content="https://manases.net/images/company_logo.jpg">
+
     <title>Terms of Service - Intelligent ChatBot</title>
+    <link rel="icon" href="../images/company_logo.jpg" type="image/jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
@@ -12,14 +27,36 @@
             margin: 2rem auto;
             padding: 2rem;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         }
-        body { background-color: #f8f9fa; color: #333; font-family: system-ui, -apple-system, sans-serif; }
-        h1, h2, h3 { font-weight: 600; color: #111; margin-top: 1.5rem; }
-        p, li { line-height: 1.6; color: #444; }
-        a { color: #000; text-decoration: underline; }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 600;
+            color: #111;
+            margin-top: 1.5rem;
+        }
+
+        p,
+        li {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="main-document">
@@ -94,9 +131,16 @@
 
             <section>
                 <h2>9. Contact</h2>
-                <p>For any questions regarding these Terms, please contact the developer via the <a href="https://github.com/Manasess896/Whatsapp-Bot">GitHub repository</a>.</p>
+                <p>For any questions regarding these Terms, please contact the developer via:</p>
+                <ul>
+                    <li><a href="https://code-craft-website-solutions.onrender.com/contact-us" target="_blank">Developer Contact Form</a></li>
+                    <li><a href="https://github.com/Manasess896/Advanced-Whatsapp-Bot" target="_blank">GitHub Repository</a></li>
+                    <li><a href="https://wa.me/254114471302" target="_blank">Contact on WhatsApp</a></li>
+                    <li>View our <a href="privacy-policy">Privacy Policy</a></li>
+                </ul>
             </section>
         </div>
     </div>
 </body>
+
 </html>
