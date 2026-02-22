@@ -64,8 +64,8 @@ RewriteRule ^index\.php$ /home [R=301,L]
 RewriteRule ^home/?$ index.php [L]
 RewriteRule ^$ index.php [L]
 RewriteRule ^contact-us/?$ contact.php [L]
-RewriteRule ^AI/privacy-policy/?$ AI/privacy.php [L]
-RewriteRule ^AI/terms-of-service/?$ AI/terms.php [L]
+RewriteRule ^ai/privacy-policy/?$ ai/privacy.php [L]
+RewriteRule ^ai/terms-of-service/?$ ai/terms.php [L]
 
 RewriteRule ^projects/?$ projects.php [L]
 
