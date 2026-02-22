@@ -1,0 +1,7 @@
+vendor/
+.git/
+.gitignore
+*.md
+composer.lock
+.DS_Store
+Thumbs.db
