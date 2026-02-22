@@ -1,5 +1,8 @@
 <?php
 $pageTitle = "Page Not Found | Manases Kamau";
+
+$baseDir = str_replace('\\', '/', rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\'));
+$baseUrl = !empty($baseDir) ? $baseDir . '/' : '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +12,8 @@ $pageTitle = "Page Not Found | Manases Kamau";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Page Not Found - Code Craft Website Solutions.">
   <meta name="author" content="Manases Kamau">
-  <link rel="icon" href="/images/company_logo.jpg" type="image/jpeg">
+  <base href="<?php echo htmlspecialchars($baseUrl); ?>">
+  <link rel="icon" href="images/company_logo.jpg" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -26,11 +30,11 @@ $pageTitle = "Page Not Found | Manases Kamau";
     <h2 class="h4 mb-4 text-uppercase ls-1">Page Not Found</h2>
 
     <p class="lead text-secondary mb-5" style="max-width: 500px;">
-      The page  you are looking for does not exist or has been moved.
+      The page you are looking for does not exist or has been moved.
     </p>
 
     <a href="home" class="btn btn-outline-dark rounded-0 px-4 py-2 text-uppercase ls-1" style="font-size: 0.9rem;">
-      &larr; Return to home page 
+      &larr; Return to home page
     </a>
 
     <div class="mt-5 pt-5 border-top w-50">
@@ -48,7 +52,7 @@ $pageTitle = "Page Not Found | Manases Kamau";
 
       <p class="small text-muted mb-0">&copy; <?php echo date("Y"); ?> Manases Kamau. All rights reserved.</p>
     </div>
-   
+
 
 
 

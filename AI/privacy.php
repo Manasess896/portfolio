@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Privacy Policy for Intelligent WhatsApp Bot. Learn how we collect, use, and protect your data including conversation history and location information.">
     <meta name="keywords" content="Privacy Policy, Data Protection, WhatsApp Bot, AI Privacy, User Data, GDPR, Chatbot Security">
-
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://manases.net/AI/privacy.php">
     <meta property="og:title" content="Privacy Policy - Intelligent ChatBot">
     <meta property="og:description" content="How we handle your data, conversation history, and privacy rights for the Intelligent WhatsApp Bot.">
     <meta property="og:image" content="https://manases.net/images/company_logo.jpg">
-
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://manases.net/AI/privacy.php">
     <meta property="twitter:title" content="Privacy Policy - Intelligent ChatBot">
