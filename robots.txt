@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /includes/
-Disallow: /admin/
-Disallow: /assets/css/
-Disallow: /assets/js/
-
-Sitemap: https://code-craft-website-solutions.onrender.com/sitemap.xml

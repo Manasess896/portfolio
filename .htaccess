@@ -1,4 +1,8 @@
-rewriteEngine On
+RewriteEngine On
+
+
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 <IfModule mod_headers.c>
    
     Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com https://unpkg.com https://accounts.google.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com data:; img-src 'self' data: https: blob: https://image.tmdb.org; connect-src 'self' https: https://api.themoviedb.org; frame-src https://www.google.com https://accounts.google.com https://www.youtube.com https://youtube.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';"
@@ -62,9 +66,10 @@ RewriteCond %{THE_REQUEST} \s/index\.php[\s?] [NC]
 RewriteRule ^index\.php$ /home [R=301,L]
 
 RewriteRule ^home/?$ index.php [L]
-# Handle root request explicitly
 RewriteRule ^$ index.php [L]
 RewriteRule ^contact-us/?$ contact.php [L]
+RewriteRule ^AI/privacy-policy/?$ AI/privacy.php [L]
+RewriteRule ^AI/terms-of-service/?$ AI/terms.php [L]
 
 RewriteRule ^projects/?$ projects.php [L]
 

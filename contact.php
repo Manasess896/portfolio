@@ -98,7 +98,7 @@ $pageTitle = "Contact | Manases Kamau";
       <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / Code Craft Website Solutions.</p>
     </section>
     <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-      <img src="images/company_logo_.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+      <img src="images/company_logo.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
       <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>
     </div>
   </div>
