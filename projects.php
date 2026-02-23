@@ -77,7 +77,7 @@ logVisitorToMongoDB();
     <meta property="og:description" content="A curated list of technical projects including custom websites, social media automation, AI bots, and secure web platforms.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/projects">
-    <link rel="icon" href="/images/company_logo.jpg" type="image/jpeg">
+    <link rel="icon" href="/images/company_logo.png" type="image/jpeg">
     <title><?php echo $pageTitle; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -93,7 +93,7 @@ logVisitorToMongoDB();
             <div class="col-md-6 mb-2 mb-md-0">
                 <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
                     <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
-                    <span class="small text-muted text-uppercase ls-1">MK website solutions /span>
+                    <span class="small text-muted text-uppercase ls-1">MK website solutions </span>
                 </a>
             </div>
 
@@ -288,7 +288,7 @@ logVisitorToMongoDB();
             </div>
 
             <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-                <img src="images/company_logo.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+                <img src="images/company_logo.png" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
                 <span class="small fw-semibold text-uppercase ls-1">MK website solutions /span>
             </div>
             
