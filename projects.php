@@ -289,7 +289,7 @@ logVisitorToMongoDB();
 
             <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
                 <img src="images/company_logo.png" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-                <span class="small fw-semibold text-uppercase ls-1">MK website solutions /span>
+                <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
             </div>
             
             <p class="small text-muted mb-0">&copy; <?php echo date("Y"); ?> Manases Kamau. All rights reserved.</p>
