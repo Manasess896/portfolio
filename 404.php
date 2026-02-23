@@ -10,7 +10,7 @@ $baseUrl = !empty($baseDir) ? $baseDir . '/' : '/';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Page Not Found - Code Craft Website Solutions.">
+  <meta name="description" content="Page Not Found - MK website solutions ">
   <meta name="author" content="Manases Kamau">
   <base href="<?php echo htmlspecialchars($baseUrl); ?>">
   <link rel="icon" href="images/company_logo.jpg" type="image/jpeg">
@@ -47,7 +47,7 @@ $baseUrl = !empty($baseDir) ? $baseDir . '/' : '/';
       </div>
       <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
         <img src="images/company_logo.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-        <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>
+        <span class="small fw-semibold text-uppercase ls-1">MK website solutions /span>
       </div>
 
       <p class="small text-muted mb-0">&copy; <?php echo date("Y"); ?> Manases Kamau. All rights reserved.</p>

@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Manases Kamau | Code Craft Website Solutions";
+$pageTitle = "Manases Kamau | MK website solutions ;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -71,11 +71,11 @@ logVisitorToMongoDB();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Code Craft Website Solutions: We create custom websites, build powerful system automation tools, and automate social media workflows. Expert web development services tailored to transform and grow your business.">
+  <meta name="description" content="MK website solutions  We create custom websites, build powerful system automation tools, and automate social media workflows. Expert web development services tailored to transform and grow your business.">
   <meta name="author" content="Manases Kamau">
-  <meta name="keywords" content="Web Developer, Custom Websites, System Automation, Social Media Automation, APIs, Code Craft Website Solutions, Manases Kamau, Nairobi">
-  <meta property="og:title" content="Manases Kamau | Code Craft Website Solutions">
-  <meta property="og:description" content="Custom websites, powerful automation tools, and social media workflow solutions. Transform your business with Code Craft Website Solutions.">
+  <meta name="keywords" content="Web Developer, Custom Websites, System Automation, Social Media Automation, APIs, MK website solutions  Manases Kamau, Nairobi">
+  <meta property="og:title" content="Manases Kamau | MK website solutions >
+  <meta property="og:description" content="Custom websites, powerful automation tools, and social media workflow solutions. Transform your business with MK website solutions ">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/">
   <meta property="og:image" content="https://code-craft-website-solutions.onrender.com/assets/images/mainimages/IMG-20241218-WA0011[1].jpg">
@@ -95,7 +95,7 @@ logVisitorToMongoDB();
       <div class="col-md-6 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
           <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
-          <span class="small text-muted text-uppercase ls-1">Code Craft Website Solutions</span>
+          <span class="small text-muted text-uppercase ls-1">MK website solutions /span>
         </a>
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -226,11 +226,11 @@ logVisitorToMongoDB();
         <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / Code Craft Website Solutions.</p>
+      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / MK website solutions </p>
     </section>
     <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
       <img src="images/company_logo.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-      <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>
+      <span class="small fw-semibold text-uppercase ls-1">MK website solutions /span>
     </div>
   </div>
 

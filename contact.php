@@ -79,7 +79,7 @@ logVisitorToMongoDB();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Manases Kamau at Code Craft Website Solutions. Let's discuss your next web system, API integration, or automation project.">
+  <meta name="description" content="Contact Manases Kamau at MK website solutions  Let's discuss your next web system, API integration, or automation project.">
   <meta name="author" content="Manases Kamau">
   <meta name="keywords" content="Contact Web Developer, Hire Backend Developer, Kenya Web Design, Code Craft Contact">
   <meta property="og:title" content="Contact | Manases Kamau">
@@ -113,7 +113,7 @@ logVisitorToMongoDB();
       <div class="col-md-6 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
           <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
-          <span class="small text-muted text-uppercase ls-1">Code Craft Website Solutions</span>
+          <span class="small text-muted text-uppercase ls-1">MK website solutions /span>
         </a>
       </div>
 
@@ -168,11 +168,11 @@ logVisitorToMongoDB();
         <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / Code Craft Website Solutions.</p>
+      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / MK website solutions </p>
     </section>
     <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
       <img src="images/company_logo.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-      <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>
+      <span class="small fw-semibold text-uppercase ls-1">MK website solutions /span>
     </div>
   </div>
 

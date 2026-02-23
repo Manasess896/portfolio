@@ -70,10 +70,10 @@ logVisitorToMongoDB();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the portfolio of Code Craft Website Solutions. Creating custom websites, AI WhatsApp Bots, social media automation tools, secure systems, and more innovative digital solutions.">
+    <meta name="description" content="Explore the portfolio of MK website solutions  Creating custom websites, AI WhatsApp Bots, social media automation tools, secure systems, and more innovative digital solutions.">
     <meta name="author" content="Manases Kamau">
     <meta name="keywords" content="Code Craft Projects, Custom Websites, Social Media Automation, PHP Auth, WhatsApp Bot, Python Automation, Web Development Portfolio, API Integration">
-    <meta property="og:title" content="Project Portfolio | Code Craft Website Solutions">
+    <meta property="og:title" content="Project Portfolio | MK website solutions >
     <meta property="og:description" content="A curated list of technical projects including custom websites, social media automation, AI bots, and secure web platforms.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/projects">
@@ -93,7 +93,7 @@ logVisitorToMongoDB();
             <div class="col-md-6 mb-2 mb-md-0">
                 <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
                     <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
-                    <span class="small text-muted text-uppercase ls-1">Code Craft Website Solutions</span>
+                    <span class="small text-muted text-uppercase ls-1">MK website solutions /span>
                 </a>
             </div>
 
@@ -289,7 +289,7 @@ logVisitorToMongoDB();
 
             <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
                 <img src="images/company_logo.jpg" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-                <span class="small fw-semibold text-uppercase ls-1">Code Craft Website Solutions</span>
+                <span class="small fw-semibold text-uppercase ls-1">MK website solutions /span>
             </div>
             
             <p class="small text-muted mb-0">&copy; <?php echo date("Y"); ?> Manases Kamau. All rights reserved.</p>
