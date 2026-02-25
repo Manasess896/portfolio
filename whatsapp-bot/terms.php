@@ -133,7 +133,7 @@
                 <h2>9. Contact</h2>
                 <p>For any questions regarding these Terms, please contact the developer via:</p>
                 <ul>
-                    <li><a href="https://code-craft-website-solutions.onrender.com/contact-us" target="_blank">Developer Contact Form</a></li>
+                    <li><a href="https://mk-website-solutions.onrender.com/contact-us" target="_blank">Developer Contact Form</a></li>
                     <li><a href="https://github.com/Manasess896/Advanced-Whatsapp-Bot" target="_blank">GitHub Repository</a></li>
                     <li><a href="https://wa.me/254114471302" target="_blank">Contact on WhatsApp</a></li>
                     <li>View our <a href="privacy-policy">Privacy Policy</a></li>

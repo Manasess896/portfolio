@@ -71,14 +71,14 @@ logVisitorToMongoDB();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MK website solutions  We create custom websites, build powerful system automation tools, and automate social media workflows. Expert web development services tailored to transform and grow your business.">
+  <meta name="description" content="Expert Full Stack Developer & Automation Specialist. MK Website Solutions offers custom frontend & backend development, system automation tools, social media workflows, website maintenance, and API integrations. Let's collaborate on your next project.">
   <meta name="author" content="Manases Kamau">
-  <meta name="keywords" content="Web Developer, Custom Websites, System Automation, Social Media Automation, APIs, MK website solutions  Manases Kamau, Nairobi">
-  <meta property="og:title" content="Manases Kamau | MK website solutions >
-  <meta property="og:description" content="Custom websites, powerful automation tools, and social media workflow solutions. Transform your business with MK website solutions ">
+  <meta name="keywords" content="Full Stack Developer, Frontend Developer, Backend Developer, Custom Websites, System Automation, Social Media Automation, Website Maintenance, API Integration, Project Collaboration, Web Development Services, Nairobi, Kenya, MK Website Solutions, Manases Kamau">
+  <meta property="og:title" content="Manases Kamau | Full Stack Developer & Automation Expert | MK Website Solutions">
+  <meta property="og:description" content="Looking for a top-tier developer? I build secure custom websites, powerful automation tools, and integrate complex APIs. Specialized in Full Stack development and Social Media Automation. Transform your business today.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/">
-  <meta property="og:image" content="https://code-craft-website-solutions.onrender.com/assets/images/mainimages/IMG-20241218-WA0011[1].jpg">
+  <meta property="og:url" content="https://mk-website-solutions.onrender.com/">
+  <meta property="og:image" content="https://mk-website-solutions.onrender.com/images/company_logo.png">
   <link rel="icon" href="/images/company_logo.png" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -229,7 +229,7 @@ logVisitorToMongoDB();
       <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / MK website solutions </p>
     </section>
     <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-      <img src="images/company_logo.png" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+      <img src="images/company_logo.png" alt="MK Website Solutions Logo" style="width: 24px; height: 24px; border-radius: 4px;">
       <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
     </div>
   </div>

@@ -46,7 +46,7 @@ $baseUrl = !empty($baseDir) ? $baseDir . '/' : '/';
         <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
       </div>
       <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-        <img src="images/company_logo.png" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+        <img src="images/company_logo.png" alt="MK Website Solutions Logo" style="width: 24px; height: 24px; border-radius: 4px;">
         <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
       </div>
 

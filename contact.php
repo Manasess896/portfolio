@@ -78,12 +78,12 @@ logVisitorToMongoDB();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Manases Kamau at MK website solutions  Let's discuss your next web system, API integration, or automation project.">
+  <meta name="description" content="Contact Manases Kamau at MK Website Solutions. Ready to hire a Full Stack Developer? Let's discuss your custom website, automation tool, API integration, or maintenance needs. Open for collaborations.">
   <meta name="author" content="Manases Kamau">
-  <meta name="keywords" content="Contact Web Developer, Hire Backend Developer, Kenya Web Design, Code Craft Contact">
-  <meta property="og:title" content="Contact | Manases Kamau">
-  <meta property="og:description" content="Get in touch for professional web development and system automation services.">
-  <meta property="og:url" content="https://code-craft-website-solutions.onrender.com/contact-us">
+  <meta name="keywords" content="Hire Web Developer, Contact Full Stack Developer, Website Maintenance Services, Automation Expert, API Integration Specialist, Project Collaboration, Nairobi Web Design, MK Website Solutions Contact">
+  <meta property="og:title" content="Contact Manases Kamau | Hire Full Stack Developer | MK Website Solutions">
+  <meta property="og:description" content="Ready to start your project? Get in touch for professional web development, system automation, and website maintenance services. Let's build something great together.">
+  <meta property="og:url" content="https://mk-website-solutions.onrender.com/contact-us">
   <link rel="icon" href="/images/company_logo.png" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -170,7 +170,7 @@ logVisitorToMongoDB();
       <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / MK website solutions </p>
     </section>
     <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-      <img src="images/company_logo.png" alt="Code Craft Logo" style="width: 24px; height: 24px; border-radius: 4px;">
+      <img src="images/company_logo.png" alt="MK Website Solutions Logo" style="width: 24px; height: 24px; border-radius: 4px;">
       <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
     </div>
   </div>
