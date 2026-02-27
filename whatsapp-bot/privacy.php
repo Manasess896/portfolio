@@ -7,15 +7,15 @@
     <meta name="description" content="Privacy Policy for Intelligent WhatsApp Bot. Learn how we collect, use, and protect your data including conversation history and location information.">
     <meta name="keywords" content="Privacy Policy, Data Protection, WhatsApp Bot, AI Privacy, User Data, GDPR, Chatbot Security">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://manases.net/AI/privacy.php">
+    <meta property="og:url" content="https://manases.space/ai/privacy-policy">
     <meta property="og:title" content="Privacy Policy - Intelligent ChatBot">
     <meta property="og:description" content="How we handle your data, conversation history, and privacy rights for the Intelligent WhatsApp Bot.">
-    <meta property="og:image" content="https://manases.net/images/company_logo.png">
+    <meta property="og:image" content="https://manases.space/images/company_logo.png">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://manases.net/AI/privacy.php">
+    <meta property="twitter:url" content="https://manases.space/ai/privacy-policy">
     <meta property="twitter:title" content="Privacy Policy - Intelligent ChatBot">
     <meta property="twitter:description" content="How we handle your data, conversation history, and privacy rights for the Intelligent WhatsApp Bot.">
-    <meta property="twitter:image" content="https://manases.net/images/company_logo.png">
+    <meta property="twitter:image" content="https://manases.space/images/company_logo.png">
 
     <title>Privacy Policy - Intelligent ChatBot</title>
     <link rel="icon" href="../images/company_logo.png" type="image/jpeg">
@@ -136,7 +136,7 @@
                 <h2>9. Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy, please contact the developer via:</p>
                  <ul>
-                    <li><a href="https://mk-website-solutions.onrender.com/contact-us" target="_blank">Developer Contact Form</a></li>
+                    <li><a href="https://manases.space/contact-us" target="_blank">Developer Contact Form</a></li>
                     <li><a href="https://github.com/Manasess896/Advanced-Whatsapp-Bot" target="_blank">GitHub Repository</a></li>
                     <li><a href="https://wa.me/254114471302" target="_blank">Contact on WhatsApp</a></li>
                      <li>View our <a href="terms-of-service">Terms of Service</a></li>

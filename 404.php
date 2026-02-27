@@ -10,7 +10,7 @@ $baseUrl = !empty($baseDir) ? $baseDir . '/' : '/';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Page Not Found - MK website solutions ">
+  <meta name="description" content="Page Not Found - Manases Kamau | Web Developer & Automation Expert">
   <meta name="author" content="Manases Kamau">
   <base href="<?php echo htmlspecialchars($baseUrl); ?>">
   <link rel="icon" href="images/company_logo.png" type="image/jpeg">
@@ -45,10 +45,7 @@ $baseUrl = !empty($baseDir) ? $baseDir . '/' : '/';
         <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-        <img src="images/company_logo.png" alt="MK Website Solutions Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-        <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
-      </div>
+      <!-- Logo removed -->
 
       <p class="small text-muted mb-0">&copy; <?php echo date("Y"); ?> Manases Kamau. All rights reserved.</p>
     </div>

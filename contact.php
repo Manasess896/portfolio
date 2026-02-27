@@ -78,12 +78,12 @@ logVisitorToMongoDB();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Manases Kamau at MK Website Solutions. Ready to hire a Full Stack Developer? Let's discuss your custom website, automation tool, API integration, or maintenance needs. Open for collaborations.">
+  <meta name="description" content="Contact Manases Kamau. Ready to hire a top Web Developer in Kenya? Let's discuss your custom website, automation tool, API integration, or maintenance needs. Specialist in Automation and Full Stack Development.">
   <meta name="author" content="Manases Kamau">
-  <meta name="keywords" content="Hire Web Developer, Contact Full Stack Developer, Website Maintenance Services, Automation Expert, API Integration Specialist, Project Collaboration, Nairobi Web Design, MK Website Solutions Contact">
-  <meta property="og:title" content="Contact Manases Kamau | Hire Full Stack Developer | MK Website Solutions">
+  <meta name="keywords" content="Hire Web Developer, Contact Full Stack Developer, Web Developer Kenya, Manases, Kamau, Automation Expert Kenya, API Integration, Website Maintenance, Nairobi Web Design, Manases Kamau Contact">
+  <meta property="og:title" content="Contact Manases Kamau | Hire Top Web Developer & Automation Expert in Kenya">
   <meta property="og:description" content="Ready to start your project? Get in touch for professional web development, system automation, and website maintenance services. Let's build something great together.">
-  <meta property="og:url" content="https://mk-website-solutions.onrender.com/contact-us">
+  <meta property="og:url" content="https://manases.space/contact-us">
   <link rel="icon" href="/images/company_logo.png" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -93,7 +93,6 @@ logVisitorToMongoDB();
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 
@@ -112,7 +111,7 @@ logVisitorToMongoDB();
       <div class="col-md-6 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
           <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
-          <span class="small text-muted text-uppercase ls-1">MK website solutions</span>
+          <span class="small text-muted text-uppercase ls-1">Full Stack Developer</span>
         </a>
       </div>
 
@@ -167,12 +166,9 @@ logVisitorToMongoDB();
         <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / MK website solutions </p>
+      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau </p>
     </section>
-    <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-      <img src="images/company_logo.png" alt="MK Website Solutions Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-      <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
-    </div>
+    
   </div>
 
 

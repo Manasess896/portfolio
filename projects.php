@@ -70,13 +70,13 @@ logVisitorToMongoDB();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse the portfolio of MK Website Solutions. Featuring Full Stack projects, efficient automation tools, AI-powered WhatsApp bots, secure authentication systems, and custom e-commerce platforms. See how we solve complex problems.">
+    <meta name="description" content="Browse the portfolio of Manases Kamau, a leading Web Developer in Kenya. Featuring Full Stack projects, efficient automation tools, AI-powered WhatsApp bots, secure authentication systems, and custom e-commerce platforms. See how we solve complex problems with automation and code.">
     <meta name="author" content="Manases Kamau">
-    <meta name="keywords" content="Web Development Portfolio, Full Stack Projects, Automation Tools, AI Bots, WhatsApp Bot, PHP Authentication, Python Automation, Custom E-commerce, API Integration Examples, Software Development Projects, MK Website Solutions">
-    <meta property="og:title" content="Project Portfolio | Full Stack & Automation Projects | MK Website Solutions">
+    <meta name="keywords" content="Manases, Kamau, Web Development Portfolio, Full Stack Projects, Automation Tools, AI Bots, WhatsApp Bot, PHP Authentication, Python Automation, Custom E-commerce, API Integration Examples, Software Development Projects, Manases Kamau, Automation in Kenya, Web Developer Kenya">
+    <meta property="og:title" content="Manases Kamau Projects | Web Developer & Automation Specialist Kenya">
     <meta property="og:description" content="Explore a curated list of technical projects: Custom Websites, Social Media Automation, AI Chatbots, and Secure Web Platforms built by Manases Kamau.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mk-website-solutions.onrender.com/projects">
+    <meta property="og:url" content="https://manases.space/projects">
     <link rel="icon" href="/images/company_logo.png" type="image/jpeg">
     <title><?php echo $pageTitle; ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -93,7 +93,7 @@ logVisitorToMongoDB();
             <div class="col-md-6 mb-2 mb-md-0">
                 <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
                     <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
-                    <span class="small text-muted text-uppercase ls-1">MK website solutions </span>
+                    <span class="small text-muted text-uppercase ls-1">Full Stack Developer</span>
                 </a>
             </div>
 
@@ -287,11 +287,6 @@ logVisitorToMongoDB();
                 </a>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-                <img src="images/company_logo.png" alt="MK Website Solutions Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-                <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
-            </div>
-            
             <p class="small text-muted mb-0">&copy; <?php echo date("Y"); ?> Manases Kamau. All rights reserved.</p>
         </section>
     </div>

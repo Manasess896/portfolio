@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Manases Kamau | MK website solutions ";
+$pageTitle = "Manases Kamau | Full Stack Developer";
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -71,16 +71,37 @@ logVisitorToMongoDB();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Expert Full Stack Developer & Automation Specialist. MK Website Solutions offers custom frontend & backend development, system automation tools, social media workflows, website maintenance, and API integrations. Let's collaborate on your next project.">
+  <meta name="description" content="Expert Full Stack Developer & Automation Specialist in Kenya. Manases Kamau offers custom frontend & backend development, system automation tools, social media workflows, website maintenance, and API integrations. Top web developer in Nairobi for secure, scalable solutions.">
   <meta name="author" content="Manases Kamau">
-  <meta name="keywords" content="Full Stack Developer, Frontend Developer, Backend Developer, Custom Websites, System Automation, Social Media Automation, Website Maintenance, API Integration, Project Collaboration, Web Development Services, Nairobi, Kenya, MK Website Solutions, Manases Kamau">
-  <meta property="og:title" content="Manases Kamau | Full Stack Developer & Automation Expert | MK Website Solutions">
-  <meta property="og:description" content="Looking for a top-tier developer? I build secure custom websites, powerful automation tools, and integrate complex APIs. Specialized in Full Stack development and Social Media Automation. Transform your business today.">
+  <meta name="keywords" content="Manases, Kamau, Web Developer, Web Developer in Kenya, Automation, Automation in Kenya, Full Stack Developer, Frontend Developer, Backend Developer, Custom Websites, System Automation, Social Media Automation, Website Maintenance, API Integration, Web Development Services, Nairobi, Kenya, Manases Kamau, Best Web Developer Kenya, Software Engineer Kenya">
+  <meta property="og:title" content="Manases Kamau | Top Web Developer & Automation Expert in Kenya">
+  <meta property="og:description" content="Looking for a top-tier web developer in Kenya? I build secure custom websites, powerful automation tools, and integrate complex APIs. Specialized in Full Stack development and Social Media Automation. Transform your business today matching Manases space.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mk-website-solutions.onrender.com/">
-  <meta property="og:image" content="https://mk-website-solutions.onrender.com/images/company_logo.png">
+  <meta property="og:url" content="https://manases.space/">
+  <meta property="og:image" content="https://manases.space/images/company_logo.png">
   <link rel="icon" href="/images/company_logo.png" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Manases Kamau",
+      "jobTitle": "Full Stack Developer & Automation Expert",
+      "url": "https://manases.space",
+      "sameAs": [
+        "https://www.linkedin.com/in/manases-kamau-5a6837294",
+        "https://github.com/Manasess896",
+        "https://www.instagram.com/manases___/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "Kenya"
+      },
+      "knowsAbout": ["Web Development", "System Automation", "Python", "PHP", "API Integration", "Social Media Bots"],
+      "description": "Expert Web Developer and Automation Specialist based in Nairobi, Kenya. Building secure, scalable web systems and custom automation tools."
+    }
+  </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,8 +115,8 @@ logVisitorToMongoDB();
     <header class="d-flex flex-wrap justify-content-between align-items-center py-4 mb-5 border-bottom">
       <div class="col-md-6 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex flex-column link-body-emphasis text-decoration-none">
-          <span class="fs-4 fw-bold text-uppercase name-brand">Manases Kamau</span>
-          <span class="small text-muted text-uppercase ls-1">MK website solutions </span>
+          <h1 class="fs-4 fw-bold text-uppercase name-brand m-0">Manases Kamau</h1>
+          <span class="small text-muted text-uppercase ls-1">Full Stack Developer & Automation Expert</span>
         </a>
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -108,10 +129,10 @@ logVisitorToMongoDB();
     <section class="py-5 mb-5 doc-section">
       <div class="row">
         <div class="col-lg-8">
-          <h1 class="display-5 fw-normal mb-4 serif-font">Web Systems Developer</h1>
+          <h1 class="display-5 fw-normal mb-4 serif-font">Web Systems Developer in Kenya</h1>
           <p class="lead mb-4">
-            I build secure, scalable web systems.<br>
-            APIs. Automation. Admin Panels. Infrastructure.
+            Hi, I'm Manases. I build secure, scalable web systems and automation tools.<br>
+            Based in Nairobi, I specialize in Fullstack web development, APIs, Automation tools, Social media automation, Admin Panels, and custom Infrastructure for businesses worldwide.
           </p>
           <div class="d-flex gap-3">
             <a href="projects" class="btn btn-outline-dark rounded-0 px-4">View All Work</a>
@@ -226,12 +247,9 @@ logVisitorToMongoDB();
         <a href="https://www.linkedin.com/in/manases-kamau-5a6837294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Manasess896/" class="text-secondary mx-2 fs-5" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau / MK website solutions </p>
+      <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau </p>
     </section>
-    <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
-      <img src="images/company_logo.png" alt="MK Website Solutions Logo" style="width: 24px; height: 24px; border-radius: 4px;">
-      <span class="small fw-semibold text-uppercase ls-1">MK website solutions </span>
-    </div>
+  
   </div>
 
 
