@@ -13,7 +13,7 @@ $baseUrl = !empty($baseDir) ? $baseDir . '/' : '/';
   <meta name="description" content="Page Not Found - Manases Kamau | Web Developer & Automation Expert">
   <meta name="author" content="Manases Kamau">
   <base href="<?php echo htmlspecialchars($baseUrl); ?>">
-  <link rel="icon" href="images/company_logo.png" type="image/jpeg">
+  <link rel="icon" href="images/company_logo.jpeg" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">

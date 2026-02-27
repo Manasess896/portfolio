@@ -10,15 +10,15 @@
     <meta property="og:url" content="https://manases.space/ai/privacy-policy">
     <meta property="og:title" content="Privacy Policy - Intelligent ChatBot">
     <meta property="og:description" content="How we handle your data, conversation history, and privacy rights for the Intelligent WhatsApp Bot.">
-    <meta property="og:image" content="https://manases.space/images/company_logo.png">
+    <meta property="og:image" content="https://manases.space/images/company_logo.jpeg">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://manases.space/ai/privacy-policy">
     <meta property="twitter:title" content="Privacy Policy - Intelligent ChatBot">
     <meta property="twitter:description" content="How we handle your data, conversation history, and privacy rights for the Intelligent WhatsApp Bot.">
-    <meta property="twitter:image" content="https://manases.space/images/company_logo.png">
+    <meta property="twitter:image" content="https://manases.space/images/company_logo.jpeg">
 
     <title>Privacy Policy - Intelligent ChatBot</title>
-    <link rel="icon" href="../images/company_logo.png" type="image/jpeg">
+    <link rel="icon" href="../images/company_logo.jpeg" type="image/jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>

@@ -78,8 +78,8 @@ logVisitorToMongoDB();
   <meta property="og:description" content="Looking for a top-tier web developer in Kenya? I build secure custom websites, powerful automation tools, and integrate complex APIs. Specialized in Full Stack development and Social Media Automation. Transform your business today matching Manases space.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://manases.space/">
-  <meta property="og:image" content="https://manases.space/images/company_logo.png">
-  <link rel="icon" href="/images/company_logo.png" type="image/jpeg">
+  <meta property="og:image" content="https://manases.space/images/company_logo.jpeg">
+  <link rel="icon" href="/images/company_logo.jpeg" type="image/jpeg">
   <title><?php echo $pageTitle; ?></title>
   <script type="application/ld+json">
     {
