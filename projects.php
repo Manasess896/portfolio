@@ -173,7 +173,7 @@ logVisitorToMongoDB();
                     <p class="mb-3">Comprehensive media tracking application allowing users to track movies/TV shows using TMDB/IMDB data and Google OAuth.</p>
                      <div>
                         <a href="#" class="text-dark text-decoration-underline small me-3" onclick="loadProjectDetail('watchlist'); return false;">View Details</a>
-                         <a href="https://watchlist-tv-39458b9629cc.herokuapp.com/contact-us" class="text-dark text-decoration-underline small me-3">View Live</a>
+                         <a href="https://showtrackr.manases.space/contact-us" class="text-dark text-decoration-underline small me-3">View Live</a>
                     </div>
                 </div>
             </div>
@@ -340,9 +340,9 @@ logVisitorToMongoDB();
                 desc: "Comprehensive media tracking app using both email/password hashing and Google Account linking. Features reCAPTCHA security and detailed movie/TV data via TMDB.",
                 techFocus: "Complex authentication implementation merging OAuth social login with traditional hashed password accounts.",
                 links: [
-                     {text: "View Live", url: "https://watchlist-tv-39458b9629cc.herokuapp.com/contact-us"}
+                     {text: "View Live", url: "https://showtrackr.manases.space/contact-us"}
                 ],
-                 iframe: "https://watchlist-tv-39458b9629cc.herokuapp.com/contact-us"
+                 iframe: "https://showtrackr.manases.space/contact-us"
             },
             'tmdb-explorer': {
                 title: "TMDB Explorer",
