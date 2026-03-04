@@ -93,21 +93,38 @@ try {
 $pageTitle = $blog ? htmlspecialchars($blog['title'] ?? 'Blog') . " - Manases Kamau" : 'Blog Not Found';
 $pageDesc = $blog ? substr(strip_tags((string)($blog['content'] ?? '')), 0, 160) : 'Read insightful articles.';
 $pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['REQUEST_URI'];
+$pageImage = !empty($blog['featured_image_id'])
+    ? "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . "/serve_image.php?id=" . urlencode((string)$blog['featured_image_id'])
+    : "https://manases.space/images/company_logo.jpeg";
+
+$protocol    = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$scriptDir   = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/');
+$siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?= $siteBaseUrl ?>">
     <title><?= $pageTitle ?></title>
     <meta name="description" content="<?= htmlspecialchars($pageDesc) ?>">
     <meta name="author" content="<?= htmlspecialchars($blog['author_name'] ?? 'Manases Kamau') ?>">
-    
+    <meta name="robots" content="index, follow">
     <meta property="og:title" content="<?= $pageTitle ?>">
     <meta property="og:description" content="<?= htmlspecialchars($pageDesc) ?>">
     <meta property="og:type" content="article">
     <meta property="og:url" content="<?= $pageUrl ?>">
-    <link rel="icon" href="/images/company_logo.jpeg" type="image/jpeg">
+    <meta property="og:image" content="<?= $pageImage ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= $pageTitle ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($pageDesc) ?>">
+    <meta name="twitter:image" content="<?= $pageImage ?>">
+    <?php if ($blog): ?>
+    <meta property="article:published_time" content="<?= isset($blog['created_at']) ? $blog['created_at']->toDateTime()->format('c') : '' ?>">
+    <meta property="article:author" content="<?= htmlspecialchars($blog['author_name'] ?? 'Manases Kamau') ?>">
+    <?php endif; ?>
+    <link rel="icon" href="<?= $siteBaseUrl ?>images/company_logo.jpeg" type="image/jpeg">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -115,6 +132,7 @@ $pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['R
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <style>
+      
         .blog-content { line-height: 1.85; font-size: 1.1rem; color: #333; }
         .blog-content p { margin-bottom: 1.5rem; }
         .blog-content h2 { margin-top: 2rem; margin-bottom: 1rem; font-family: 'Merriweather', serif; font-weight: 700; }
@@ -123,10 +141,45 @@ $pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['R
         .blog-content ul, .blog-content ol { margin-bottom: 1.5rem; padding-left: 2rem; }
         .blog-content li { margin-bottom: 0.5rem; }
         .blog-content blockquote { border-left: 4px solid #333; padding-left: 1rem; font-style: italic; color: #555; margin: 1.5rem 0; }
-        .blog-content pre { background: #f4f4f4; padding: 1rem; border-radius: 4px; overflow-x: auto; margin-bottom: 1.5rem; }
+      
+        .blog-content .ql-editor { padding: 0; border: none; font-size: inherit; font-family: inherit; }
+        
+        .blog-content pre,
+        .blog-content .ql-syntax,
+        .blog-content .ql-code-block-container {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.1rem 1.4rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.92rem;
+            line-height: 1.6;
+            white-space: pre;
+        }
+        .blog-content .ql-code-block { display: block; white-space: pre; }
+       
+        .blog-content code {
+            background: #f0f0f0;
+            color: #c7254e;
+            padding: 0.15em 0.4em;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        .blog-content .ql-video { width: 100%; height: 400px; margin: 1.5rem 0; border: none; }
+        
+        .blog-content .ql-align-center { text-align: center; }
+        .blog-content .ql-align-right  { text-align: right; }
+        .blog-content .ql-align-justify { text-align: justify; }
+      
+        .blog-content .ql-indent-1 { padding-left: 3em; }
+     
+        .blog-content ol.ql-list, .blog-content ul.ql-list { padding-left: 1.5rem; }
     </style>
 </head>
-<body>
+<body id="top">
 
 <div class="container main-document">
     <header class="d-flex flex-wrap justify-content-between align-items-center py-4 mb-5 border-bottom">
@@ -138,9 +191,9 @@ $pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['R
         </div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="projects" class="nav-link px-3 text-dark">Work</a></li>
-            <li><a href="blog" class="nav-link px-3 text-dark fw-bold border-bottom border-dark">Blog</a></li>
             <li><a href="contact-us" class="nav-link px-3 text-dark">Contact</a></li>
-             <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
+            <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
+            <li><a href="blog" class="nav-link px-3 text-dark fw-bold border-bottom border-dark">Blog</a></li>
         </ul>
     </header>
 
@@ -173,6 +226,12 @@ $pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['R
                         <?php endif; ?>
                     </div>
 
+                    <?php if (!empty($blog['featured_image_id'])): ?>
+                        <div style="margin-bottom: 1.5rem;">
+                            <img src="serve_image.php?id=<?= htmlspecialchars((string)$blog['featured_image_id']) ?>" alt="<?= htmlspecialchars($blog['title'] ?? 'Blog featured image') ?>" style="width: 100%; height: auto; max-height: 500px; object-fit: cover; border-radius: 12px;">
+                        </div>
+                    <?php endif; ?>
+
                     <div class="blog-content">
                         <?= (string)($blog['content'] ?? '') ?>
                     </div>
@@ -180,7 +239,7 @@ $pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['R
                 
                 <div class="mt-5 pt-5 border-top">
                      <h4 class="serif-font mb-3">Share this article</h4>
-                     <!-- Add share buttons here if needed -->
+                  
                      <a href="https://twitter.com/intent/tweet?text=<?= urlencode($blog['title']) ?>&url=<?= urlencode($pageUrl) ?>" target="_blank" class="btn btn-sm btn-outline-dark rounded-0 me-2">Share on Twitter</a>
                      <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?= urlencode($pageUrl) ?>" target="_blank" class="btn btn-sm btn-outline-dark rounded-0">Share on LinkedIn</a>
                 </div>
@@ -222,7 +281,7 @@ $pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['R
                 &copy; <?= date('Y') ?> Manases Kamau.
             </div>
             <div class="col-6 text-end">
-                <a href="#" class="text-muted text-decoration-none">Back to top</a>
+                <a href="#top" class="text-muted text-decoration-none">Back to top</a>
             </div>
         </div>
     </footer>

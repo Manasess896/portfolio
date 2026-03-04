@@ -17,13 +17,27 @@ function slugify($text, string $divider = '-')
     return $text;
 }
 
+
+
 try {
     $db = getAdminDb();
+
+    $totalCount     = $db->blogs->countDocuments([]);
+    $publishedCount = $db->blogs->countDocuments(['status' => 'published']);
+
+    $debugInfo['total_docs_in_blogs']     = $totalCount;
+    $debugInfo['published_docs_in_blogs'] = $publishedCount;
+
+    
+
     $blogs = $db->blogs->find(
         ['status' => 'published'],
         ['sort' => ['created_at' => -1], 'limit' => 100]
     );
+    $debugInfo['count'] = $publishedCount;
+
 } catch (Exception $e) {
+    $debugInfo['error'] = $e->getMessage();
     $blogs = [];
 }
 ?>
@@ -46,6 +60,8 @@ try {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
 <div class="container main-document">
     <header class="d-flex flex-wrap justify-content-between align-items-center py-4 mb-5 border-bottom">
         <div class="col-md-6 mb-2 mb-md-0">
@@ -56,9 +72,9 @@ try {
         </div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="projects" class="nav-link px-3 text-dark">Work</a></li>
-            <li><a href="blog" class="nav-link px-3 text-dark fw-bold border-bottom border-dark">Blog</a></li>
             <li><a href="contact-us" class="nav-link px-3 text-dark">Contact</a></li>
             <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
+            <li><a href="blog" class="nav-link px-3 text-dark fw-bold border-bottom border-dark">Blog</a></li>
         </ul>
     </header>
 
@@ -89,6 +105,15 @@ try {
                         <?= isset($blog['created_at']) ? $blog['created_at']->toDateTime()->format('M j, Y') : '' ?>
                         · <?= htmlspecialchars($blog['category'] ?? 'General') ?>
                     </div>
+                    
+                    <?php if (!empty($blog['featured_image_id'])): ?>
+                    <div style="margin-bottom: 1rem;">
+                        <a href="<?= $blogLink ?>">
+                            <img src="serve_image.php?id=<?= htmlspecialchars((string)$blog['featured_image_id']) ?>" alt="<?= htmlspecialchars($blog['title'] ?? 'Blog image') ?>" style="width: 100%; height: 240px; object-fit: cover; border-radius: 8px;">
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                    
                     <h2 class="serif-font mb-2">
                         <a class="text-dark text-decoration-none hover-underline" href="<?= $blogLink ?>">
                             <?= htmlspecialchars($blog['title'] ?? 'Untitled') ?>
