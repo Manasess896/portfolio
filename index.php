@@ -121,6 +121,7 @@ logVisitorToMongoDB();
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="projects" class="nav-link px-3 text-dark">Work</a></li>
+        <li><a href="blog" class="nav-link px-3 text-dark">Blog</a></li>
         <li><a href="contact-us" class="nav-link px-3 text-dark">Contact</a></li>
         <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
       </ul>

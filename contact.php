@@ -118,6 +118,7 @@ logVisitorToMongoDB();
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="home" class="nav-link px-3 text-dark">Home</a></li>
         <li><a href="projects" class="nav-link px-3 text-dark">Projects</a></li>
+        <li><a href="blog" class="nav-link px-3 text-dark">Blog</a></li>
       </ul>
     </header>
 

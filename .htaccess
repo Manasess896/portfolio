@@ -27,7 +27,10 @@ RewriteRule ^404/?$ 404.php [L]
 <FilesMatch "^\.|^composer\.(json|lock)$|^package(-lock)?\.json$|\.(bak|config|sql|ini|log|sh|inc|swp|dist|env|todo|md)$">
     Require all denied
 </FilesMatch>
-
+#prevent access to blog setup file
+<Files "session_setup.php">
+    Require all denied
+</Files>
 # Protect includes directory
 # <Directory "includes">
 #     Require all denied
@@ -66,6 +69,8 @@ RewriteRule ^$ index.php [L]
 RewriteRule ^contact-us/?$ contact.php [L]
 RewriteRule ^ai/privacy-policy/?$ whatsapp-bot/privacy.php [L]
 RewriteRule ^ai/terms-of-service/?$ whatsapp-bot/terms.php  [L]
+RewriteRule ^blog/?$ blogs.php [L]
+RewriteRule ^blog/([a-f0-9]{24})/?.*$ blog.php?id=$1 [L,QSA]
 
 RewriteRule ^projects/?$ projects.php [L]
 
