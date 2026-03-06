@@ -174,9 +174,25 @@ $siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
         .blog-content .ql-align-right  { text-align: right; }
         .blog-content .ql-align-justify { text-align: justify; }
       
-        .blog-content .ql-indent-1 { padding-left: 3em; }
-     
         .blog-content ol.ql-list, .blog-content ul.ql-list { padding-left: 1.5rem; }
+        
+        /* Make Google Translate responsive */
+        #google_translate_element {
+            overflow: hidden;
+            max-width: 100%;
+        }
+        #google_translate_element select {
+            max-width: 100%;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        /* Hide the top Google Translate banner */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+        body {
+            top: 0px !important;
+        }
     </style>
 </head>
 <body id="top">
@@ -289,7 +305,9 @@ $siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
 </div>
 <script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+  }, 'google_translate_element');
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
