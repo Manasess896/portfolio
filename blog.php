@@ -212,10 +212,11 @@ $siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
                 
                     <h1 class="display-5 serif-font mb-4"><?= htmlspecialchars($blog['title'] ?? 'Untitled') ?></h1>
                     
-                    <div class="mb-4 pb-4 border-bottom">
-                         <div class="d-flex align-items-center">
+                    <div class="mb-4 pb-4 border-bottom d-flex justify-content-between align-items-center flex-wrap">
+                         <div class="d-flex align-items-center mb-2 mb-md-0">
                             <span class="small text-secondary">By <strong><?= htmlspecialchars($blog['author_name'] ?? 'Manases Kamau') ?></strong></span>
                          </div>
+                         <div id="google_translate_element"></div>
                     </div>
 
                     <div class="mb-4">
@@ -286,5 +287,11 @@ $siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
         </div>
     </footer>
 </div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
