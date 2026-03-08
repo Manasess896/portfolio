@@ -9,65 +9,67 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
-function getUserIP() {
-    $ipKeys = ['HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR'];
-    foreach ($ipKeys as $key) {
-        if (array_key_exists($key, $_SERVER) === true) {
-            foreach (explode(',', $_SERVER[$key]) as $ip) {
-                $ip = trim($ip);
-                if (filter_var($ip, FILTER_VALIDATE_IP) !== false) {
-                    return $ip;
-                }
-            }
+function getUserIP()
+{
+  $ipKeys = ['HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR'];
+  foreach ($ipKeys as $key) {
+    if (array_key_exists($key, $_SERVER) === true) {
+      foreach (explode(',', $_SERVER[$key]) as $ip) {
+        $ip = trim($ip);
+        if (filter_var($ip, FILTER_VALIDATE_IP) !== false) {
+          return $ip;
         }
+      }
     }
-    return $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+  }
+  return $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
 }
 
-function logVisitorToMongoDB() {
-    try {
-        $url = $_ENV['MONGODB_URI'] ?? getenv('MONGODB_URI');
-        $mydatabase = $_ENV['MONGODB_DATABASE'] ?? getenv('MONGODB_DATABASE');
-        
-        if (empty($url) || empty($mydatabase)) {
-            error_log('MongoDB configuration not found in environment variables');
-            return;
-        }
+function logVisitorToMongoDB()
+{
+  try {
+    $url = $_ENV['MONGODB_URI'] ?? getenv('MONGODB_URI');
+    $mydatabase = $_ENV['MONGODB_DATABASE'] ?? getenv('MONGODB_DATABASE');
 
-        $client = new Client($url);
-        $collection = $client->selectCollection($mydatabase, 'dev-logs');
-        
-        $visitorData = [
-            'url' => $_SERVER['REQUEST_URI'] ?? 'Unknown',
-            'full_url' => (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ($_SERVER['REQUEST_URI'] ?? ''),
-            'ip_address' => getUserIP(),
-            'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown',
-            'device_info' => [
-                'browser' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown',
-                'platform' => php_uname('s') ?? 'Unknown',
-                'accept_language' => $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? 'Unknown',
-            ],
-            'request_method' => $_SERVER['REQUEST_METHOD'] ?? 'GET',
-            'referer' => $_SERVER['HTTP_REFERER'] ?? 'Direct',
-            'timestamp' => new MongoDB\BSON\UTCDateTime(),
-            'server_name' => $_SERVER['SERVER_NAME'] ?? 'Unknown',
-            'query_string' => $_SERVER['QUERY_STRING'] ?? '',
-            'http_host' => $_SERVER['HTTP_HOST'] ?? 'Unknown',
-            'remote_port' => $_SERVER['REMOTE_PORT'] ?? 'Unknown',
-        ];
-        
-        $collection->insertOne($visitorData);
-        
-    } catch (Exception $e) {
-       
-        error_log('MongoDB logging error: ' . $e->getMessage());
+    if (empty($url) || empty($mydatabase)) {
+      error_log('MongoDB configuration not found in environment variables');
+      return;
     }
+
+    $client = new Client($url);
+    $collection = $client->selectCollection($mydatabase, 'dev-logs');
+
+    $visitorData = [
+      'url' => $_SERVER['REQUEST_URI'] ?? 'Unknown',
+      'full_url' => (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ($_SERVER['REQUEST_URI'] ?? ''),
+      'ip_address' => getUserIP(),
+      'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown',
+      'device_info' => [
+        'browser' => $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown',
+        'platform' => php_uname('s') ?? 'Unknown',
+        'accept_language' => $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? 'Unknown',
+      ],
+      'request_method' => $_SERVER['REQUEST_METHOD'] ?? 'GET',
+      'referer' => $_SERVER['HTTP_REFERER'] ?? 'Direct',
+      'timestamp' => new MongoDB\BSON\UTCDateTime(),
+      'server_name' => $_SERVER['SERVER_NAME'] ?? 'Unknown',
+      'query_string' => $_SERVER['QUERY_STRING'] ?? '',
+      'http_host' => $_SERVER['HTTP_HOST'] ?? 'Unknown',
+      'remote_port' => $_SERVER['REMOTE_PORT'] ?? 'Unknown',
+    ];
+
+    $collection->insertOne($visitorData);
+  } catch (Exception $e) {
+
+    error_log('MongoDB logging error: ' . $e->getMessage());
+  }
 }
 
 logVisitorToMongoDB();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -121,9 +123,10 @@ logVisitorToMongoDB();
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="projects" class="nav-link px-3 text-dark">Work</a></li>
-        <li><a href="blog" class="nav-link px-3 text-dark">Blog</a></li>
+
         <li><a href="contact-us" class="nav-link px-3 text-dark">Contact</a></li>
         <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
+        <li><a href="blog" class="nav-link px-3 text-dark">Blog</a></li>
       </ul>
     </header>
 
@@ -250,7 +253,7 @@ logVisitorToMongoDB();
       </div>
       <p class="small text-muted">&copy; <?php echo date("Y"); ?> Manases Kamau </p>
     </section>
-  
+
   </div>
 
 

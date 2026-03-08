@@ -40,6 +40,13 @@ try {
     $debugInfo['error'] = $e->getMessage();
     $blogs = [];
 }
+
+$baseUrl = $_ENV['BASE_URL'] ?? getenv('BASE_URL') ?? 'https://manases.space/';
+$baseUrl = rtrim($baseUrl, '/') . '/';
+$pageTitle = "Blog - Manases Kamau";
+$pageDesc = "Read the latest insights on Web Development, Automation, and Tech from Manases Kamau. Tutorials, case studies, and industry trends.";
+$pageUrl = $baseUrl . "blog";
+$pageImage = $baseUrl . "images/company_logo.jpeg";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,11 +56,16 @@ try {
     <title>Blog - Manases Kamau</title>
     <meta name="description" content="Read the latest insights on Web Development, Automation, and Tech from Manases Kamau. Tutorials, case studies, and industry trends.">
     <meta name="author" content="Manases Kamau">
-    <meta property="og:title" content="Blog | Manases Kamau">
-    <meta property="og:description" content="Insights on Web Development, Automation, and Tech.">
-    <meta property="og:url" content="https://manases.space/blog">
+    <meta property="og:title" content="<?= htmlspecialchars($pageTitle) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($pageDesc) ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($pageUrl) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($pageImage) ?>">
     <meta property="og:type" content="website">
-    <link rel="icon" href="/images/company_logo.jpeg" type="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($pageDesc) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($pageImage) ?>">
+    <link rel="icon" href="<?= htmlspecialchars($pageImage) ?>" type="image/jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -71,10 +83,11 @@ try {
             </a>
         </div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="home" class="nav-link px-3 text-dark">Home</a></li>
             <li><a href="projects" class="nav-link px-3 text-dark">Work</a></li>
             <li><a href="contact-us" class="nav-link px-3 text-dark">Contact</a></li>
-            <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
-            <li><a href="blog" class="nav-link px-3 text-dark fw-bold border-bottom border-dark">Blog</a></li>
+            <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span >Download CV</span></a></li>
+            
         </ul>
     </header>
 

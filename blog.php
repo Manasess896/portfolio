@@ -90,23 +90,23 @@ try {
     $blog = null;
 }
 
+$baseUrl = $_ENV['BASE_URL'] ?? getenv('BASE_URL') ?? 'https://manases.space/';
+$baseUrl = rtrim($baseUrl, '/') . '/';
+
 $pageTitle = $blog ? htmlspecialchars($blog['title'] ?? 'Blog') . " - Manases Kamau" : 'Blog Not Found';
 $pageDesc = $blog ? substr(strip_tags((string)($blog['content'] ?? '')), 0, 160) : 'Read insightful articles.';
-$pageUrl = "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . $_SERVER['REQUEST_URI'];
+$pageUrl = $baseUrl . ltrim($_SERVER['REQUEST_URI'], '/');
 $pageImage = !empty($blog['featured_image_id'])
-    ? "https://" . ($_SERVER['HTTP_HOST'] ?? 'manases.space') . "/serve_image.php?id=" . urlencode((string)$blog['featured_image_id'])
-    : "https://manases.space/images/company_logo.jpeg";
+    ? $baseUrl . "serve_image.php?id=" . urlencode((string)$blog['featured_image_id'])
+    : $baseUrl . "images/company_logo.jpeg";
 
-$protocol    = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-$scriptDir   = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/');
-$siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="<?= $siteBaseUrl ?>">
+    <base href="<?= htmlspecialchars($baseUrl) ?>">
     <title><?= $pageTitle ?></title>
     <meta name="description" content="<?= htmlspecialchars($pageDesc) ?>">
     <meta name="author" content="<?= htmlspecialchars($blog['author_name'] ?? 'Manases Kamau') ?>">
@@ -124,7 +124,7 @@ $siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
     <meta property="article:published_time" content="<?= isset($blog['created_at']) ? $blog['created_at']->toDateTime()->format('c') : '' ?>">
     <meta property="article:author" content="<?= htmlspecialchars($blog['author_name'] ?? 'Manases Kamau') ?>">
     <?php endif; ?>
-    <link rel="icon" href="<?= $siteBaseUrl ?>images/company_logo.jpeg" type="image/jpeg">
+    <link rel="icon" href="<?= htmlspecialchars($baseUrl) ?>images/company_logo.jpeg" type="image/jpeg">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -206,10 +206,11 @@ $siteBaseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . $scriptDir . '/';
             </a>
         </div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="home" class="nav-link px-3 text-dark">Home</a></li>
             <li><a href="projects" class="nav-link px-3 text-dark">Work</a></li>
             <li><a href="contact-us" class="nav-link px-3 text-dark">Contact</a></li>
-            <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span class="border-bottom border-secondary">Download CV</span></a></li>
-            <li><a href="blog" class="nav-link px-3 text-dark fw-bold border-bottom border-dark">Blog</a></li>
+            <li><a href="assets/Manases_Kamau_CV.pdf" class="nav-link px-3 text-dark" download><span >Download CV</span></a></li>
+            <li><a href="blog" class="nav-link px-3 text-dark fw-bold  border-dark">Blog</a></li>
         </ul>
     </header>
 
