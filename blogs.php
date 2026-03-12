@@ -111,7 +111,7 @@ $pageImage = $baseUrl . "images/company_logo.jpeg";
                     if ($excerpt === '' && !empty($blog['content'])) {
                         $excerpt = substr(strip_tags((string)$blog['content']), 0, 180) . '...';
                     }
-                    $blogLink = "blog/" . (string)$blog['_id'] . "/" . slugify($blog['title'] ?? 'untitled');
+                    $blogLink = "blog/" . (string)$blog['_id'] . "/" . (!empty($blog['slug']) ? urlencode($blog['slug']) : slugify($blog['title'] ?? 'untitled'));
                 ?>
                 <div class="col-md-12 border-bottom pb-4 mb-4">
                     <div class="mb-2 text-uppercase small ls-1 text-muted">

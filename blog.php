@@ -93,8 +93,9 @@ try {
 $baseUrl = $_ENV['BASE_URL'] ?? getenv('BASE_URL') ?? 'https://manases.space/';
 $baseUrl = rtrim($baseUrl, '/') . '/';
 
-$pageTitle = $blog ? htmlspecialchars($blog['title'] ?? 'Blog') . " - Manases Kamau" : 'Blog Not Found';
-$pageDesc = $blog ? substr(strip_tags((string)($blog['content'] ?? '')), 0, 160) : 'Read insightful articles.';
+$pageTitle = $blog ? (!empty($blog['meta_title']) ? htmlspecialchars($blog['meta_title']) : htmlspecialchars($blog['title'] ?? 'Blog') . " - Manases Kamau") : 'Blog Not Found';
+$pageDesc = $blog ? (!empty($blog['meta_description']) ? htmlspecialchars($blog['meta_description']) : substr(strip_tags((string)($blog['content'] ?? '')), 0, 160)) : 'Read insightful articles.';
+$pageKeywords = $blog ? htmlspecialchars($blog['keywords'] ?? '') : '';
 $pageUrl = $baseUrl . ltrim($_SERVER['REQUEST_URI'], '/');
 $pageImage = !empty($blog['featured_image_id'])
     ? $baseUrl . "serve_image.php?id=" . urlencode((string)$blog['featured_image_id'])
@@ -108,7 +109,10 @@ $pageImage = !empty($blog['featured_image_id'])
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="<?= htmlspecialchars($baseUrl) ?>">
     <title><?= $pageTitle ?></title>
-    <meta name="description" content="<?= htmlspecialchars($pageDesc) ?>">
+    <meta name="description" content="<?= $pageDesc ?>">
+    <?php if ($pageKeywords): ?>
+    <meta name="keywords" content="<?= $pageKeywords ?>">
+    <?php endif; ?>
     <meta name="author" content="<?= htmlspecialchars($blog['author_name'] ?? 'Manases Kamau') ?>">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="<?= $pageTitle ?>">
@@ -123,6 +127,21 @@ $pageImage = !empty($blog['featured_image_id'])
     <?php if ($blog): ?>
     <meta property="article:published_time" content="<?= isset($blog['created_at']) ? $blog['created_at']->toDateTime()->format('c') : '' ?>">
     <meta property="article:author" content="<?= htmlspecialchars($blog['author_name'] ?? 'Manases Kamau') ?>">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": <?= json_encode($pageTitle) ?>,
+      "image": <?= json_encode([$pageImage]) ?>,
+      "datePublished": <?= json_encode(isset($blog['created_at']) ? $blog['created_at']->toDateTime()->format('c') : '') ?>,
+      "dateModified": <?= json_encode(isset($blog['updated_at']) ? $blog['updated_at']->toDateTime()->format('c') : (isset($blog['created_at']) ? $blog['created_at']->toDateTime()->format('c') : '')) ?>,
+      "author": [{
+          "@type": "Person",
+          "name": <?= json_encode($blog['author_name'] ?? 'Manases Kamau') ?>,
+          "url": <?= json_encode($baseUrl) ?>
+        }]
+    }
+    </script>
     <?php endif; ?>
     <link rel="icon" href="<?= htmlspecialchars($baseUrl) ?>images/company_logo.jpeg" type="image/jpeg">
 
@@ -270,7 +289,7 @@ $pageImage = !empty($blog['featured_image_id'])
                     <?php if (!empty($recommended)): ?>
                         <ul class="list-unstyled">
                         <?php foreach ($recommended as $rec): ?>
-                            <?php $recLink = "blog/" . (string)$rec['_id'] . "/" . slugify($rec['title'] ?? 'untitled'); ?>
+                            <?php $recLink = "blog/" . (string)$rec['_id'] . "/" . (!empty($rec['slug']) ? urlencode($rec['slug']) : slugify($rec['title'] ?? 'untitled')); ?>
                             <li class="mb-3 pb-3 border-bottom">
                                 <a class="text-dark text-decoration-none fw-bold d-block mb-1 hover-underline" href="<?= $recLink ?>">
                                     <?= htmlspecialchars($rec['title'] ?? 'Untitled') ?>
