@@ -11,22 +11,21 @@ $dotenv->safeLoad();
 
 function getUserIP()
 {
-  $ipKeys = ['HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR'];
-  foreach ($ipKeys as $key) {
-    if (array_key_exists($key, $_SERVER) === true) {
-      foreach (explode(',', $_SERVER[$key]) as $ip) {
-        $ip = trim($ip);
-        if (filter_var($ip, FILTER_VALIDATE_IP) !== false) {
-          return $ip;
-        }
-      }
-    }
-  }
-  return $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+  return $_SERVER['HTTP_CF_CONNECTING_IP'] ?? $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
 }
 
 function logVisitorToMongoDB()
 {
+  if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+  }
+
+  // Only log once per session to prevent DB exhaustion DoS
+  if (!empty($_SESSION['visited_log_done'])) {
+    return;
+  }
+  $_SESSION['visited_log_done'] = true;
+
   try {
     $url = $_ENV['MONGODB_URI'] ?? getenv('MONGODB_URI');
     $mydatabase = $_ENV['MONGODB_DATABASE'] ?? getenv('MONGODB_DATABASE');
