@@ -71,6 +71,7 @@ logVisitorToMongoDB();
 
 <head>
   <meta charset="UTF-8">
+  <meta name="google-adsense-account" content="ca-pub-6145187886707730">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Expert Full Stack Developer & Automation Specialist in Kenya. Manases Kamau offers custom frontend & backend development, system automation tools, social media workflows, website maintenance, and API integrations. Top web developer in Nairobi for secure, scalable solutions.">
   <meta name="author" content="Manases Kamau">
