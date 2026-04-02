@@ -150,6 +150,8 @@ $pageImage = !empty($blog['featured_image_id'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://5gvci.com/act/files/tag.min.js?z=10819561" data-cfasync="false" async></script>
+    <script>(function(s){s.dataset.zone='10817677',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
     <style>
       
         .blog-content { line-height: 1.85; font-size: 1.1rem; color: #333; }
@@ -211,8 +213,7 @@ $pageImage = !empty($blog['featured_image_id'])
         }
         body {
             top: 0px !important;
-        }
-    </style>
+        }  </style>
 </head>
 <body id="top">
 
@@ -331,5 +332,6 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
